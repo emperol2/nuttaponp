@@ -29,7 +29,7 @@
     <file path="/sx_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1382071140676" ignored="false" />
     <file path="/ICRA_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1384241756934" ignored="false" />
     <file path="/homepage_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385545401526" ignored="false" />
-    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386676392949" ignored="false" />
+    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386676413570" ignored="false" />
     <file path="/fragment.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385357350831" ignored="false" />
     <file path="/testsuite_sx.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385458801274" ignored="false" />
     <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386314484697" ignored="false" />
@@ -491,7 +491,11 @@
       <created>1386676405880</created>
       <updated>1386676405880</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated create user and search user after created on back end site">
+      <created>1386676416029</created>
+      <updated>1386676416029</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
