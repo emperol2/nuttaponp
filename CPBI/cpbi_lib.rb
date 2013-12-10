@@ -6,7 +6,7 @@ class CPBI_backend
   def initialize
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.window.maximize
-    @driver.manage.timeouts.implicit_wait = 10
+    @driver.manage.timeouts.implicit_wait = 15
     @wait = Selenium::WebDriver::Wait.new :timeout => 60
   end
 
@@ -24,7 +24,7 @@ class CPBI_backend
   end
 
   def login_backend
-    @driver.get('http://icra-dev/Composite/top.aspx')
+    @driver.get('http://icra-dev.openface.com/Composite/top.aspx')
     @wait.until {@driver.find_element(:css => 'input[name="username"]')}
     @driver.find_element(:css => 'input[name="username"]').send_key('ofsupport')
     @driver.find_element(:css => 'input[name="password"]').send_key('0p3nf4c3')

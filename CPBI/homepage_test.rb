@@ -32,41 +32,41 @@ class Homepage < Test::Unit::TestCase
   ########### with non logged in user ################
   ####################################################
 
-  #def test_homepage_elements_not_login
-  #
-  #  # To change this template use File | Settings | File Templates.
-  #  #fail('Not implemented')
-  #  @driver.get(@base_url)
-  #  #@driver.find_element(:css => '#logo').click
-  #  login = @driver.find_element(:link_text => 'LOG IN').text
-  #  assert_equal(login, 'LOG IN'.encode('UTF-8'))
-  #
-  #  widget_box = @driver.find_element(:css => '.widget-box')
-  #  # if Log In box appears
-  #  if widget_box != nil
-  #    username_field = @driver.find_element(:id => 'UserName')
-  #    password_field = @driver.find_element(:id => 'Password')
-  #
-  #    #puts username_field
-  #    has_username = assert_not_nil(username_field)
-  #    has_password = assert_not_nil(password_field)
-  #
-  #    if has_username == true && has_password == true
-  #      # Check Tool & Resources box, Members, News
-  #      assert_three_main_boxes()
-  #
-  #      #verify_widget_box()
-  #      puts __method__
-  #
-  #    else
-  #      fail('User logged on')
-  #    end
-  #
-  #  else
-  #    fail('No Widget Box')
-  #  end
-  #
-  #end
+  def test_homepage_elements_not_login
+
+    # To change this template use File | Settings | File Templates.
+    #fail('Not implemented')
+    @driver.get(@base_url)
+    #@driver.find_element(:css => '#logo').click
+    login = @driver.find_element(:link_text => 'LOG IN').text
+    assert_equal(login, 'LOG IN'.encode('UTF-8'))
+
+    widget_box = @driver.find_element(:css => '.widget-box')
+    # if Log In box appears
+    if widget_box != nil
+      username_field = @driver.find_element(:id => 'UserName')
+      password_field = @driver.find_element(:id => 'Password')
+
+      #puts username_field
+      has_username = assert_not_nil(username_field)
+      has_password = assert_not_nil(password_field)
+
+      if has_username == true && has_password == true
+        # Check Tool & Resources box, Members, News
+        assert_three_main_boxes()
+
+        #verify_widget_box()
+        puts __method__
+
+      else
+        fail('User logged on')
+      end
+
+    else
+      fail('No Widget Box')
+    end
+
+  end
 
 
   ####################################################
@@ -74,159 +74,159 @@ class Homepage < Test::Unit::TestCase
   ########### with logged in user ####################
   ####################################################
 
-  #def test_homepage_elements_with_login
-  #
-  #  # To change this template use File | Settings | File Templates.
-  #  #fail('Not implemented')
-  #  @driver.get(@base_url)
-  #  #@driver.find_element(:css => '#logo').click
-  #  login = @driver.find_element(:link_text => 'LOG IN').text
-  #  assert_equal(login, 'LOG IN'.encode('UTF-8'))
-  #
-  #  widget_box = @driver.find_element(:css => '.widget-box')
-  #  # if Log In box appears
-  #  if widget_box != nil
-  #    @driver.find_element(:id => 'UserName').send_key('20041')
-  #    @driver.find_element(:id => 'Password').send_key('PI20041')
-  #    #@driver.find_element(:css => 'input#btnLogin.button').submit
-  #    #@driver.execute_script("document.getElementById('Password').focus(); document.getElementById('Password').value = 'PI20041';")
-  #    @driver.find_element(:id => 'btnLogin').click
-  #
-  #    myaccount_link = @driver.find_element(:id => 'ctl00_ctl00_ctl37_ctlLoginView_lnkMyAccount')
-  #    myname = @driver.find_element(:id => 'ctl00_ctl00_ctl37_ctlLoginView_lblLogonUser').text
-  #    logon_panel = @driver.find_element(:id => 'logonbox-panel').displayed?
-  #    logon_name = @driver.find_element(:id => 'lblLogonUser').text
-  #
-  #    #puts username_field
-  #    has_myaccount_link = assert_not_nil(myaccount_link)
-  #    has_myname = assert_equal(myname, 'MR. NUTTAPON PICHETPONGSA'.encode('UTF-8'))
-  #    assert_equal(logon_name, 'MR. NUTTAPON PICHETPONGSA'.encode('UTF-8'), 'Logon name does not match')
-  #    has_logon_panel = assert(logon_panel)
-  #
-  #    if has_myaccount_link == true && has_myname == true && has_logon_panel == true
-  #      # Check Tool & Resources box, Members, News
-  #      assert_three_main_boxes()
-  #
-  #      #verify_widget_box()
-  #      puts __method__
-  #
-  #    else
-  #
-  #      fail('User logged on')
-  #
-  #    end
-  #
-  #  else
-  #    fail('No Widget Box')
-  #  end
-  #
-  #end
+  def test_homepage_elements_with_login
 
-  #def test_my_account
-  #  @driver.get(@base_url)
-  #  logged_on()
-  #
-  #  has_warning_box = @driver.find_element(:css => '.warning-box-outer-panel').displayed?
-  #
-  #  if has_warning_box == false
-  #    puts 'No Event registered for this Member'
-  #
-  #  else
-  #    puts 'There is Event registered for this Member'
-  #    my_member_purchase = @driver.find_elements(:xpath => '//*[@id="membershipAndProfilePanel"]/h4')
-  #    my_member_purchase.each do |h|
-  #      if(h.text() == 'MY MEMBERSHIP AND PROFILE'.encode('UTF-8'))
-  #        puts 'MY MEMBERSHIP AND PROFILE'
-  #      elsif h.text() == 'MY PURCHASES'.encode('UTF-8')
-  #        puts 'MY PURCHASES'
-  #      else
-  #        fail('NO MY MEMBERSHIP AND PROFILE & MY PURCHASES')
-  #      end
-  #    end
-  #    assert(@driver.find_element(:xpath => '//*[@id="membershipAndProfilePanel"]/div[2]/h4').displayed?,'MY Event Element NOT FOUND')
-  #    has_upcoming_event()
-  #
-  #  end
-  #
-  #end
+    # To change this template use File | Settings | File Templates.
+    #fail('Not implemented')
+    @driver.get(@base_url)
+    #@driver.find_element(:css => '#logo').click
+    login = @driver.find_element(:link_text => 'LOG IN').text
+    assert_equal(login, 'LOG IN'.encode('UTF-8'))
 
-  #def test_sign_up
-  #  @driver.get(@base_url)
-  #  @driver.find_element(:id => 'lnkSignupPage').click
-  #  assert_match('Sign Up for CPBI Profile', @driver.find_element(:css => '#contentcolumn h1').text, 'Not in Sign up page')
-  #
-  #  verify_button = @driver.find_element(:id => 'btnNextToVerifyDetail')
-  #
-  #  #### Non-member, Associate and Student
-  #  profile_type = %w[ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl00$MembershipCategory ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl02$MembershipCategory ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl03$MembershipCategory]
-  #
-  #  profile_type.each do |p|
-  #    @driver.find_element(:name => p).click
-  #
-  #    non_member_type = @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl00$MembershipCategory').selected?
-  #    associate_type = @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl02$MembershipCategory').selected?
-  #    student_type = @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl03$MembershipCategory').selected?
-  #    #### NO Address, Postal, City field are required
-  #    if non_member_type
-  #
-  #      puts 'Non member type'
-  #      verify_button.click
-  #      assert_match('Non Member', @driver.find_element(:xpath => '//*[@id="pnlProfileType"]/div[2]/div/div/span/label/b').text, 'Not Non Member Type')
-  #
-  #      assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?, 'Province does not require field')
-  #      assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqAddress').displayed?, 'Address does not require field')
-  #      assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPostalCode').displayed?, 'Postal does not require field')
-  #      assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqCity').displayed?, 'City does not require field')
-  #      assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPhone').displayed?, 'Phone does not require field')
-  #
-  #      #### NO Title and Employer ####
-  #    elsif associate_type || student_type
-  #
-  #      #### NO Tax Exempt and Continuing Education Credits #####
-  #      if student_type
-  #        puts 'Student type'
-  #
-  #        @wait.until {@driver.find_element(:id => 'vldCountNumberOfErrors')}
-  #        verify_button = @driver.find_element(:id => 'btnNextToVerifyDetail').click
-  #
-  #        assert_match('Student', @driver.find_element(:xpath => '//*[@id="pnlProfileType"]/div[5]/div/div/span/label/b').text, 'Not Student Type')
-  #        assert_false(element_present?(:id, 'ctl00_ctl00_phContent_ctl11_ctlMemberAttributeEditor_pnlTaxExempt'), 'Tax Exempt does not require field')
-  #        assert_false(element_present?(:id, 'ctl00_ctl00_phContent_ctl11_ctlMemberAttributeEditor_pnlCECredits'), 'Continuing Education Credits does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?, 'Province does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqAddress').displayed?, 'Address does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPostalCode').displayed?, 'Postal does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqCity').displayed?, 'City does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPhone').displayed?, 'Phone does not require field')
-  #      end
-  #
-  #      if associate_type
-  #        puts 'Associate type'
-  #        #begin
-  #        #  @wait.until {@driver.find_element(:name, 'ctl00$ctl00$phContent$ctl11$btnNextToVerifyDetail')}
-  #        #  verify_button.click
-  #        #  @wait.until {@driver.find_element(:name, 'ctl00$ctl00$phContent$ctl11$btnNextToVerifyDetail')}
-  #        #rescue Selenium::WebDriver::Error::StaleElementReferenceError
-  #        #  @driver.quit
-  #        #end
-  #
-  #        @wait.until {@driver.find_element(:id => 'vldCountNumberOfErrors')}
-  #        verify_button = @driver.find_element(:id => 'btnNextToVerifyDetail').click
-  #
-  #        assert_match('Associate', @driver.find_element(:xpath => '//*[@id="pnlProfileType"]/div[4]/div/div/span/label/b').text, 'Not Associate Type')
-  #        #puts @driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?, 'Province does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqAddress').displayed?, 'Address does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPostalCode').displayed?, 'Postal does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqCity').displayed?, 'City does not require field')
-  #        assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPhone').displayed?, 'Phone does not require field')
-  #
-  #      end
-  #
-  #    end
-  #
-  #  end
-  #
-  #end
+    widget_box = @driver.find_element(:css => '.widget-box')
+    # if Log In box appears
+    if widget_box != nil
+      @driver.find_element(:id => 'UserName').send_key('20041')
+      @driver.find_element(:id => 'Password').send_key('PI20041')
+      #@driver.find_element(:css => 'input#btnLogin.button').submit
+      #@driver.execute_script("document.getElementById('Password').focus(); document.getElementById('Password').value = 'PI20041';")
+      @driver.find_element(:id => 'btnLogin').click
+
+      myaccount_link = @driver.find_element(:id => 'ctl00_ctl00_ctl37_ctlLoginView_lnkMyAccount')
+      myname = @driver.find_element(:id => 'ctl00_ctl00_ctl37_ctlLoginView_lblLogonUser').text
+      logon_panel = @driver.find_element(:id => 'logonbox-panel').displayed?
+      logon_name = @driver.find_element(:id => 'lblLogonUser').text
+
+      #puts username_field
+      has_myaccount_link = assert_not_nil(myaccount_link)
+      has_myname = assert_equal(myname, 'MR. NUTTAPON PICHETPONGSA'.encode('UTF-8'))
+      assert_equal(logon_name, 'MR. NUTTAPON PICHETPONGSA'.encode('UTF-8'), 'Logon name does not match')
+      has_logon_panel = assert(logon_panel)
+
+      if has_myaccount_link == true && has_myname == true && has_logon_panel == true
+        # Check Tool & Resources box, Members, News
+        assert_three_main_boxes()
+
+        #verify_widget_box()
+        puts __method__
+
+      else
+
+        fail('User logged on')
+
+      end
+
+    else
+      fail('No Widget Box')
+    end
+
+  end
+
+  def test_my_account
+    @driver.get(@base_url)
+    logged_on()
+
+    has_warning_box = @driver.find_element(:css => '.warning-box-outer-panel').displayed?
+
+    if has_warning_box == false
+      puts 'No Event registered for this Member'
+
+    else
+      puts 'There is Event registered for this Member'
+      my_member_purchase = @driver.find_elements(:xpath => '//*[@id="membershipAndProfilePanel"]/h4')
+      my_member_purchase.each do |h|
+        if(h.text() == 'MY MEMBERSHIP AND PROFILE'.encode('UTF-8'))
+          puts 'MY MEMBERSHIP AND PROFILE'
+        elsif h.text() == 'MY PURCHASES'.encode('UTF-8')
+          puts 'MY PURCHASES'
+        else
+          fail('NO MY MEMBERSHIP AND PROFILE & MY PURCHASES')
+        end
+      end
+      assert(@driver.find_element(:xpath => '//*[@id="membershipAndProfilePanel"]/div[2]/h4').displayed?,'MY Event Element NOT FOUND')
+      has_upcoming_event()
+
+    end
+
+  end
+
+  def test_sign_up
+    @driver.get(@base_url)
+    @driver.find_element(:id => 'lnkSignupPage').click
+    assert_match('Sign Up for CPBI Profile', @driver.find_element(:css => '#contentcolumn h1').text, 'Not in Sign up page')
+
+    verify_button = @driver.find_element(:id => 'btnNextToVerifyDetail')
+
+    #### Non-member, Associate and Student
+    profile_type = %w[ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl00$MembershipCategory ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl02$MembershipCategory ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl03$MembershipCategory]
+
+    profile_type.each do |p|
+      @driver.find_element(:name => p).click
+
+      non_member_type = @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl00$MembershipCategory').selected?
+      associate_type = @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl02$MembershipCategory').selected?
+      student_type = @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl03$MembershipCategory').selected?
+      #### NO Address, Postal, City field are required
+      if non_member_type
+
+        puts 'Non member type'
+        verify_button.click
+        assert_match('Non Member', @driver.find_element(:xpath => '//*[@id="pnlProfileType"]/div[2]/div/div/span/label/b').text, 'Not Non Member Type')
+
+        assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?, 'Province does not require field')
+        assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqAddress').displayed?, 'Address does not require field')
+        assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPostalCode').displayed?, 'Postal does not require field')
+        assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqCity').displayed?, 'City does not require field')
+        assert_false(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPhone').displayed?, 'Phone does not require field')
+
+        #### NO Title and Employer ####
+      elsif associate_type || student_type
+
+        #### NO Tax Exempt and Continuing Education Credits #####
+        if student_type
+          puts 'Student type'
+
+          @wait.until {@driver.find_element(:id => 'vldCountNumberOfErrors')}
+          verify_button = @driver.find_element(:id => 'btnNextToVerifyDetail').click
+
+          assert_match('Student', @driver.find_element(:xpath => '//*[@id="pnlProfileType"]/div[5]/div/div/span/label/b').text, 'Not Student Type')
+          assert_false(element_present?(:id, 'ctl00_ctl00_phContent_ctl11_ctlMemberAttributeEditor_pnlTaxExempt'), 'Tax Exempt does not require field')
+          assert_false(element_present?(:id, 'ctl00_ctl00_phContent_ctl11_ctlMemberAttributeEditor_pnlCECredits'), 'Continuing Education Credits does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?, 'Province does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqAddress').displayed?, 'Address does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPostalCode').displayed?, 'Postal does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqCity').displayed?, 'City does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPhone').displayed?, 'Phone does not require field')
+        end
+
+        if associate_type
+          puts 'Associate type'
+          #begin
+          #  @wait.until {@driver.find_element(:name, 'ctl00$ctl00$phContent$ctl11$btnNextToVerifyDetail')}
+          #  verify_button.click
+          #  @wait.until {@driver.find_element(:name, 'ctl00$ctl00$phContent$ctl11$btnNextToVerifyDetail')}
+          #rescue Selenium::WebDriver::Error::StaleElementReferenceError
+          #  @driver.quit
+          #end
+
+          @wait.until {@driver.find_element(:id => 'vldCountNumberOfErrors')}
+          verify_button = @driver.find_element(:id => 'btnNextToVerifyDetail').click
+
+          assert_match('Associate', @driver.find_element(:xpath => '//*[@id="pnlProfileType"]/div[4]/div/div/span/label/b').text, 'Not Associate Type')
+          #puts @driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqProvince').displayed?, 'Province does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqAddress').displayed?, 'Address does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPostalCode').displayed?, 'Postal does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqCity').displayed?, 'City does not require field')
+          assert(@driver.find_element(:css, 'span#ctl00_ctl00_phContent_ctl11_ctlAddressEditor_vldReqPhone').displayed?, 'Phone does not require field')
+
+        end
+
+      end
+
+    end
+
+  end
 
   def test_Event_BackEnd
     login_backend()
