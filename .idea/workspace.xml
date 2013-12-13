@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RubyWebDriver.iml" afterPath="$PROJECT_DIR$/.idea/RubyWebDriver.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPBI/backend_test.rb" afterPath="$PROJECT_DIR$/CPBI/backend_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPBI/cpbi_lib.rb" afterPath="$PROJECT_DIR$/CPBI/cpbi_lib.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RubyWebDriver.iws" />
@@ -29,12 +32,13 @@
     <file path="/sx_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1382071140676" ignored="false" />
     <file path="/ICRA_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1384241756934" ignored="false" />
     <file path="/homepage_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385545401526" ignored="false" />
-    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386676413570" ignored="false" />
+    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386732884227" ignored="false" />
     <file path="/fragment.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385357350831" ignored="false" />
     <file path="/testsuite_sx.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385458801274" ignored="false" />
-    <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386314484697" ignored="false" />
-    <file path="/cpbi_lib.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385725526112" ignored="false" />
-    <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385985546912" ignored="false" />
+    <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386836808637" ignored="false" />
+    <file path="/cpbi_lib.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386835523259" ignored="false" />
+    <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386851434246" ignored="false" />
+    <file path="$PROJECT_DIR$/../monologue-0-3-stable/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386851565806" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,7 @@
       <file leaf-file-name="homepage_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="41" selection-start="10310" selection-end="10310" vertical-scroll-proportion="0.0">
+            <state line="236" column="38" selection-start="10483" selection-end="10483" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +70,7 @@
       <file leaf-file-name="backend_test.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CPBI/backend_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="427" column="51" selection-start="14678" selection-end="14678" vertical-scroll-proportion="0.5487288">
+            <state line="8" column="60" selection-start="213" selection-end="213" vertical-scroll-proportion="0.22006473">
               <folding />
             </state>
           </provider>
@@ -75,8 +79,11 @@
       <file leaf-file-name="cpbi_lib.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="45" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="13" column="56" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1100#3825#0" expanded="false" />
+                <element signature="e#3829#6557#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,16 +125,16 @@
         <option value="$PROJECT_DIR$/testsuite/testsuite.rb" />
         <option value="$PROJECT_DIR$/CPBI/cbpi_lib.rb" />
         <option value="$PROJECT_DIR$/CPBI/homepage_test.rb" />
-        <option value="$PROJECT_DIR$/CPBI/cpbi_lib.rb" />
         <option value="$PROJECT_DIR$/CPBI/backend_test.rb" />
+        <option value="$PROJECT_DIR$/CPBI/cpbi_lib.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1432" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -155,6 +162,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,18 +197,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.github" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../monologue-0-3-stable" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -495,10 +502,14 @@
       <created>1386676416029</created>
       <updated>1386676416029</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated create user and search user after created on back end site">
+      <created>1386676424733</created>
+      <updated>1386676424733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="1">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -519,24 +530,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="1432" y="-8" width="1296" height="1040" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32479784" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16307278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23790322" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.6846361" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1779053" sideWeight="0.671159" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20421393" sideWeight="0.72516555" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29801324" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31536388" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31551498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27483442" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -644,37 +655,19 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="41" selection-start="10310" selection-end="10310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs193/numeric.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="349" column="8" selection-start="11210" selection-end="11210" vertical-scroll-proportion="0.35081968" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="45" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/captureEntireScreen.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="464" selection-end="464" vertical-scroll-proportion="0.13606557">
-          <folding />
-        </state>
+        <state line="10" column="50" selection-start="464" selection-end="464" vertical-scroll-proportion="0.13606557" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snippet.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.083606556">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.083606556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/testsuite.rb">
@@ -692,9 +685,26 @@
         <state line="959" column="0" selection-start="24727" selection-end="24727" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="236" column="38" selection-start="10483" selection-end="10483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="56" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1100#3825#0" expanded="false" />
+            <element signature="e#3829#6557#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CPBI/backend_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="427" column="51" selection-start="14678" selection-end="14678" vertical-scroll-proportion="0.5487288">
+        <state line="8" column="60" selection-start="213" selection-end="213" vertical-scroll-proportion="0.22006473">
           <folding />
         </state>
       </provider>

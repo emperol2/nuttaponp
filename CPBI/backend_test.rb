@@ -11,6 +11,7 @@ class BackEnd < Test::Unit::TestCase
   # to set up fixture information.
 
   def setup
+    # Create Object from CPBI Library (cpbi_lib.rb)
     @cpbi_backend = CPBI_backend.new
     @driver = @cpbi_backend.driver
     @wait = @cpbi_backend.wait
@@ -27,11 +28,6 @@ class BackEnd < Test::Unit::TestCase
   def test_Search_User_BackEnd
 
     # To change this template use File | Settings | File Templates.
-
-    # Create Object from CPBI Library (cpbi_lib.rb)
-    #cpbi_backend = CPBI_backend.new
-    #@driver = cpbi_backend.driver
-    #@wait = cpbi_backend.wait
     puts 'Starting - Normal Search User Back End'
     @cpbi_backend.login_backend
 
@@ -44,103 +40,7 @@ class BackEnd < Test::Unit::TestCase
     #puts @iframe.to_s
     @driver.switch_to.frame(@iframe.to_s)
 
-    ####### Switch to explorer frame #######
-    list_home_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_explorer_iframe = list_home_iframe[3]
-    @driver.switch_to.frame(get_explorer_iframe)
-
-    sleep 5
-
-    ####### Switch to system view (tree) frame #######
-    list_system_view_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_system_view_iframe = list_system_view_iframe[0]
-    @driver.switch_to.frame(get_system_view_iframe)
-
-    sleep 5
-
-    ####### unwrap page source to each line, and click at 'CPBI Members' tree #######
-    tree_pagesource2 = @driver.page_source
-    tree_pagesource2 = tree_pagesource2.to_s
-    newline_tree = tree_pagesource2.gsub(/\>/, ">\r\n")
-
-    @ary = Array.new
-    newline_tree.each_line do |line|
-
-      matcher_member = line.include? 'Members for CPBI'
-
-      if matcher_member
-
-        get_all_member = line.scan(/key[0-9]+/)
-
-        get_all_member.each do |key|
-          @ary.push(key)
-        end
-
-      end
-
-    end
-
-    #puts get_key_member = @ary[3]
-    get_key_member = @ary[3]
-    @driver.action.double_click(@driver.find_element(:xpath, '//*[@id="'+get_key_member+'"]')).perform
-    sleep 10
-
-    ####### unwrap page source to each line, and click at 'Users' tree #######
-    user_pagesource = @driver.page_source
-    user_pagesource = user_pagesource.to_s
-    newline_user = user_pagesource.gsub(/\>/, ">\r\n")
-
-    @ary2 = Array.new
-
-    matcher_user = newline_user.scan(/key[0-9]+" label="Users"/)
-
-    matcher_user.each do |line|
-      get_all_user = line.scan(/key[0-9]+/)
-
-      get_all_user.each do |key|
-        @ary2.push(key)
-      end
-
-    end
-
-    #puts get_key_user = @ary2[1]
-    get_key_user = @ary2[1]
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_user+'"]')).perform
-    sleep 10
-
-    @driver.switch_to.default_content
-
-    @cpbi_backend.select_iframeid()
-
-    @driver.switch_to.frame(@iframe.to_s)
-
-    create_user_pagesource = @driver.page_source
-    create_user_pagesource = create_user_pagesource.to_s
-    newline_create_user = create_user_pagesource.gsub(/\>/, ">\r\n")
-
-    @ary3 = Array.new
-
-    matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Manage Users"/)
-
-    if matcher_create_user.size > 1
-      matcher_create_user.each do |line|
-        get_all_create_user = line.scan(/key[0-9]+/)
-
-        get_all_create_user.each do |key|
-          @ary3.push(key)
-        end
-
-      end
-      get_key_create_user = @ary3[0]
-
-    else
-      get_key_create_user = matcher_create_user[0].scan(/key[0-9]+/)
-      get_key_create_user = get_key_create_user[0]
-    end
-
-
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_create_user+'"]')).perform
-    sleep 10
+    @cpbi_backend.manage_user
 
     list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
     get_main_iframe = list_main_iframe[2]
@@ -177,17 +77,10 @@ class BackEnd < Test::Unit::TestCase
 
     puts 'Ended - Normal Search User Back End'
 
-
   end
 
   def test_Create_User_BackEnd
 
-    # To change this template use File | Settings | File Templates.
-
-    # Create Object from CPBI Library (cpbi_lib.rb)
-    #cpbi_backend = CPBI_backend.new
-    #@driver = cpbi_backend.driver
-    #@wait = cpbi_backend.wait
     puts 'Starting - Create User Back End'
     @cpbi_backend.login_backend
 
@@ -200,103 +93,7 @@ class BackEnd < Test::Unit::TestCase
     #puts @iframe.to_s
     @driver.switch_to.frame(@iframe.to_s)
 
-    ####### Switch to explorer frame #######
-    list_home_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_explorer_iframe = list_home_iframe[3]
-    @driver.switch_to.frame(get_explorer_iframe)
-
-    sleep 5
-
-    ####### Switch to system view (tree) frame #######
-    list_system_view_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_system_view_iframe = list_system_view_iframe[0]
-    @driver.switch_to.frame(get_system_view_iframe)
-
-    sleep 5
-
-    ####### unwrap page source to each line, and click at 'CPBI Members' tree #######
-    tree_pagesource2 = @driver.page_source
-    tree_pagesource2 = tree_pagesource2.to_s
-    newline_tree = tree_pagesource2.gsub(/\>/, ">\r\n")
-
-    @ary = Array.new
-    newline_tree.each_line do |line|
-
-      matcher_member = line.include? 'Members for CPBI'
-
-      if matcher_member
-
-        get_all_member = line.scan(/key[0-9]+/)
-
-        get_all_member.each do |key|
-          @ary.push(key)
-        end
-
-      end
-
-    end
-
-    #puts get_key_member = @ary[3]
-    get_key_member = @ary[3]
-    @driver.action.double_click(@driver.find_element(:xpath, '//*[@id="'+get_key_member+'"]')).perform
-    sleep 10
-
-    ####### unwrap page source to each line, and click at 'Users' tree #######
-    user_pagesource = @driver.page_source
-    user_pagesource = user_pagesource.to_s
-    newline_user = user_pagesource.gsub(/\>/, ">\r\n")
-
-    @ary2 = Array.new
-
-    matcher_user = newline_user.scan(/key[0-9]+" label="Users"/)
-
-    matcher_user.each do |line|
-      get_all_user = line.scan(/key[0-9]+/)
-
-      get_all_user.each do |key|
-        @ary2.push(key)
-      end
-
-    end
-
-    #puts get_key_user = @ary2[1]
-    get_key_user = @ary2[1]
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_user+'"]')).perform
-    sleep 10
-
-    @driver.switch_to.default_content
-
-    @cpbi_backend.select_iframeid()
-
-    @driver.switch_to.frame(@iframe.to_s)
-
-    create_user_pagesource = @driver.page_source
-    create_user_pagesource = create_user_pagesource.to_s
-    newline_create_user = create_user_pagesource.gsub(/\>/, ">\r\n")
-
-    @ary3 = Array.new
-
-    matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Create User"/)
-
-    if matcher_create_user.size > 1
-      matcher_create_user.each do |line|
-        get_all_create_user = line.scan(/key[0-9]+/)
-
-        get_all_create_user.each do |key|
-          @ary3.push(key)
-        end
-
-      end
-      get_key_create_user = @ary3[0]
-
-    else
-      get_key_create_user = matcher_create_user[0].scan(/key[0-9]+/)
-      get_key_create_user = get_key_create_user[0]
-    end
-
-
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_create_user+'"]')).perform
-    sleep 10
+    @cpbi_backend.create_user
 
     list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
     get_main_iframe = list_main_iframe[2]
@@ -326,10 +123,7 @@ class BackEnd < Test::Unit::TestCase
       end
     end
 
-    randx = Random.new(100)
-    random_number = (randx.rand * 20000).round
-    random_QA = 'QA '+random_number.to_s
-    @first_name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtFirstName').send_key(random_QA)
+    @first_name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtFirstName').send_key(random_username)
     last_name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtLastName').send_key('Automation')
     email = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtEmail').send_key('qa@openface.com')
 
@@ -447,103 +241,7 @@ class BackEnd < Test::Unit::TestCase
     #puts @iframe.to_s
     @driver.switch_to.frame(@iframe.to_s)
 
-    ####### Switch to explorer frame #######
-    list_home_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_explorer_iframe = list_home_iframe[3]
-    @driver.switch_to.frame(get_explorer_iframe)
-
-    sleep 5
-
-    ####### Switch to system view (tree) frame #######
-    list_system_view_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_system_view_iframe = list_system_view_iframe[0]
-    @driver.switch_to.frame(get_system_view_iframe)
-
-    sleep 5
-
-    ####### unwrap page source to each line, and click at 'CPBI Members' tree #######
-    tree_pagesource2 = @driver.page_source
-    tree_pagesource2 = tree_pagesource2.to_s
-    newline_tree = tree_pagesource2.gsub(/\>/, ">\r\n")
-
-    @ary = Array.new
-    newline_tree.each_line do |line|
-
-      matcher_member = line.include? 'Members for CPBI'
-
-      if matcher_member
-
-        get_all_member = line.scan(/key[0-9]+/)
-
-        get_all_member.each do |key|
-          @ary.push(key)
-        end
-
-      end
-
-    end
-
-    #puts get_key_member = @ary[3]
-    get_key_member = @ary[3]
-    @driver.action.double_click(@driver.find_element(:xpath, '//*[@id="'+get_key_member+'"]')).perform
-    sleep 10
-
-    ####### unwrap page source to each line, and click at 'Users' tree #######
-    user_pagesource = @driver.page_source
-    user_pagesource = user_pagesource.to_s
-    newline_user = user_pagesource.gsub(/\>/, ">\r\n")
-
-    @ary2 = Array.new
-
-    matcher_user = newline_user.scan(/key[0-9]+" label="Users"/)
-
-    matcher_user.each do |line|
-      get_all_user = line.scan(/key[0-9]+/)
-
-      get_all_user.each do |key|
-        @ary2.push(key)
-      end
-
-    end
-
-    #puts get_key_user = @ary2[1]
-    get_key_user = @ary2[1]
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_user+'"]')).perform
-    sleep 10
-
-    @driver.switch_to.default_content
-
-    @cpbi_backend.select_iframeid()
-
-    @driver.switch_to.frame(@iframe.to_s)
-
-    create_user_pagesource = @driver.page_source
-    create_user_pagesource = create_user_pagesource.to_s
-    newline_create_user = create_user_pagesource.gsub(/\>/, ">\r\n")
-
-    @ary3 = Array.new
-
-    matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Manage Users"/)
-
-    if matcher_create_user.size > 1
-      matcher_create_user.each do |line|
-        get_all_create_user = line.scan(/key[0-9]+/)
-
-        get_all_create_user.each do |key|
-          @ary3.push(key)
-        end
-
-      end
-      get_key_create_user = @ary3[0]
-
-    else
-      get_key_create_user = matcher_create_user[0].scan(/key[0-9]+/)
-      get_key_create_user = get_key_create_user[0]
-    end
-
-
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_create_user+'"]')).perform
-    sleep 10
+    @cpbi_backend.manage_user
 
     list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
     get_main_iframe = list_main_iframe[2]
@@ -558,7 +256,7 @@ class BackEnd < Test::Unit::TestCase
     @driver.switch_to.frame(manage_user_iframe)
 
     ##### Assert Empty and Find from UserID #####
-    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key(@first_name)
+    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key(random_username)
     @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
 
     sleep 10
@@ -580,8 +278,15 @@ class BackEnd < Test::Unit::TestCase
 
     puts 'Ended - Search User After Created Back End'
 
-
   end
 
+
+  def random_username
+
+    randx = Random.new(100)
+    random_number = (randx.rand * 20000).round
+    return 'QA '+random_number.to_s
+
+  end
 
 end
