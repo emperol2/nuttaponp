@@ -436,4 +436,30 @@ class CPBI_backend
 
   end
 
+  def select(where)
+    #type = ':'+type
+    #where = "'"+where+"'"
+    #type = remove_quotations(type)
+    @driver.find_element(:id => where)
+  end
+
+  def dropdown2value(where, match)
+    get_dropdown_obj = select(where)
+    get_list = get_dropdown_obj.find_elements(:tag_name => 'option')
+    get_list.each do |option|
+      if option.text == match.to_s
+        option.click
+      end
+    end
+  end
+
+  def remove_quotations(str)
+    if str.start_with?('"')
+      @str = str.slice(1..-1)
+    end
+    if str.end_with?('"')
+      @str = str.slice(0..-2)
+    end
+  end
+
 end
