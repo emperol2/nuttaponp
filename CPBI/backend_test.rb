@@ -129,9 +129,9 @@ class BackEnd < Test::Unit::TestCase
 
     yob = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ddlBirthYear')
     get_yob = yob.find_elements(:tag_name => 'option')
-    get_yob.each do |option|
-      if option.text == '1985'.encode('UTF-8')
-        option.click
+    get_yob.each do |option2|
+      if option2.text == '1985'.encode('UTF-8')
+        option2.click
       end
 
     end
@@ -196,6 +196,8 @@ class BackEnd < Test::Unit::TestCase
 
     @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_btnSave').click
 
+    sleep 5
+
 
     #@driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key('Nuttapon')
     #@driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
@@ -238,7 +240,6 @@ class BackEnd < Test::Unit::TestCase
 
     @wait.until {@driver.find_element(:id => @iframe)}
 
-    #puts @iframe.to_s
     @driver.switch_to.frame(@iframe.to_s)
 
     @cpbi_backend.manage_user

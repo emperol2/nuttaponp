@@ -8,6 +8,7 @@ class CPBI_backend
     @driver.manage.window.maximize
     @driver.manage.timeouts.implicit_wait = 15
     @wait = Selenium::WebDriver::Wait.new :timeout => 60
+    @verification_errors = []
   end
 
   def driver
@@ -460,6 +461,12 @@ class CPBI_backend
     if str.end_with?('"')
       @str = str.slice(0..-2)
     end
+  end
+
+  def verify(&blk)
+    yield
+  rescue MiniTest::Assertion => ex
+    @verification_errors << ex
   end
 
 end

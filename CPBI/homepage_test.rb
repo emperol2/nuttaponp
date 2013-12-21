@@ -14,7 +14,7 @@ class Homepage < Test::Unit::TestCase
     # Do nothing
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.window.maximize
-    @base_url = 'http://icra-dev/'
+    @base_url = 'http://icra-dev.openface.com/'
     @driver.manage.timeouts.implicit_wait = 10
     @wait = Selenium::WebDriver::Wait.new :timeout => 20
   end
@@ -228,217 +228,217 @@ class Homepage < Test::Unit::TestCase
 
   end
 
-  def test_Event_BackEnd
-    login_backend()
-    sleep 15
-    select_iframeid()
-    #puts @iframe.to_s
-    @driver.switch_to.frame(@iframe.to_s)
-
-    ####### Switch to explorer frame #######
-    list_home_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_explorer_iframe = list_home_iframe[3]
-    @driver.switch_to.frame(get_explorer_iframe)
-
-    ####### Switch to system view (tree) frame #######
-    list_system_view_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_system_view_iframe = list_system_view_iframe[0]
-    @driver.switch_to.frame(get_system_view_iframe)
-
-    ####### unwrap page source to each line, and click at 'CPBI Members' tree #######
-    tree_pagesource2 = @driver.page_source
-    tree_pagesource2 = tree_pagesource2.to_s
-    newline_tree = tree_pagesource2.gsub(/\>/, "\n")
-
-    @ary = Array.new
-    newline_tree.each_line do |line|
-
-      matcher_member = line.include? 'Members for CPBI'
-
-      if matcher_member
-
-        get_all_member = line.scan(/key[0-9]+/)
-
-        get_all_member.each do |key|
-          @ary.push(key)
-        end
-
-      end
-
-    end
-
-    #puts get_key_member = @ary[3]
-    get_key_member = @ary[3]
-    @driver.action.double_click(@driver.find_element(:xpath, '//*[@id="'+get_key_member+'"]')).perform
-    sleep 5
-
-    ####### unwrap page source to each line, and click at 'Users' tree #######
-    user_pagesource = @driver.page_source
-    user_pagesource = user_pagesource.to_s
-    newline_user = user_pagesource.gsub(/\>/, "\n")
-
-    @ary2 = Array.new
-    #newline_tree3.each_line do |x|
-    #
-    #  #reg = /Members for CPBI/
-    #
-    #  matcher = x.include? 'Users'
-    #
-    #  #matcher = x.scan('Members for CPBI')
-    #  if matcher
-    #    #matcher.each do |y|
-    #
-    #    matcher2 = x.scan(/key[0-9]+/)
-    #    matcher2.each do |z|
-    #      #puts z
-    #
-    #      @ary2.push(z)
-    #    end
-    #  end
-    #
-    #end
-
-    matcher_user = newline_user.scan(/key[0-9]+" label="Users"/)
-
-    matcher_user.each do |line|
-      get_all_user = line.scan(/key[0-9]+/)
-
-      get_all_user.each do |key|
-        @ary2.push(key)
-      end
-
-    end
-
-    #puts get_key_user = @ary2[1]
-    get_key_user = @ary2[1]
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_user+'"]')).perform
-    sleep 5
-
-    @driver.switch_to.default_content
-    select_iframeid()
-    @driver.switch_to.frame(@iframe.to_s)
-
-    create_user_pagesource = @driver.page_source
-    create_user_pagesource = create_user_pagesource.to_s
-    newline_create_user = create_user_pagesource.gsub(/\>/, "\n")
-
-    @ary3 = Array.new
-
-    matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Manage Users"/)
-
-    if matcher_create_user.size > 1
-      matcher_create_user.each do |line|
-        get_all_create_user = line.scan(/key[0-9]+/)
-
-        get_all_create_user.each do |key|
-          @ary3.push(key)
-        end
-
-      end
-      get_key_create_user = @ary3[0]
-
-    else
-      get_key_create_user = matcher_create_user[0].scan(/key[0-9]+/)
-      get_key_create_user = get_key_create_user[0]
-    end
-
-
-    @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_create_user+'"]')).perform
-    sleep 5
-
-    list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_main_iframe = list_main_iframe[2]
-    @driver.switch_to.frame(get_main_iframe)
-
-    main_content_pagesource = @driver.page_source
-    main_content_pagesource = main_content_pagesource.to_s
-    newline_main_content = main_content_pagesource.gsub(/\>/, "\n")
-
-    manage_user_iframe = @driver.find_elements(:tag_name => 'iframe')
-    manage_user_iframe = manage_user_iframe[0]
-    @driver.switch_to.frame(manage_user_iframe)
-
-    name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchName').send_key('Nuttapon')
-    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
-
-    sleep 15
-
-
-    #if matcher
-    #  #puts x
-    #  key = x.scan(/key[0-9]+/)
-    #  puts key.size
-    #end
-
-
-    #if key.size > 1
-    #  key.each do |y|
-    #    count = 1
-    #    if count == 1
-    #
-    #      ### DO NOTHING
-    #    else
-    #
-    #      puts y[1]
-    #
-    #    end
-    #    count = count + 1
-    #  end
-    #
-    #end
-
-
-
-
-
-
-    #find_treenode = @driver.find_element(:xpath => '//*[@title="Members for CPBI"]').send_keys :arrow_down
-    #sleep 15
-
-    #tree_pagesource2 = @driver.page_source
-    #matches_frame_border[1 .. matches_frame_border.length].each do |x|
-    #  puts x.text
-    #
-    #end
-
-
-    #reg = /iframe id="[a-z]+[0-9]+"/
-    #matches = reg.match(tree_pagesource)
-    #matches[1 .. matches.length].each do |x|
-    #
-    #end
-    #@driver.switch_to.frame(@driver.find_elements(:tag_name => 'iframe').find_index(2))
-    #tree_pagesource = @driver.page_source
-
-    #tree_pagesource2 = tree_pagesource.gsub(/frameborder="0" /, '')
-
-    #reg = /iframe id="[a-z]+[0-9]+"/
-    #matches = reg.match(tree_pagesource)
-    #matches[1 .. matches.length].each do |x|
-    #  if x == 4
-    #    return x.text()
-    #  end
-    #end
-    #iframe_tree = x.text().match(/[a-z]+[0-9]+/)
-
-    #index = tree_pagesource2.to_s.match(/iframe id="[a-z]+[0-9]+"/)
-
-    #iframe_tree = index[2].match(/[a-z]+[0-9]+/)
-
-    #test = @driver.find_elements(:tag_name => 'iframe')
-    #test.each do |y|
-    #  puts y
-    #  #@driver.action.double_click(x).perform
-    #end
-    #test = @driver.find_elements(:tag_name, 'html')
-    #test.each do |x|
-    #puts x.text()
-    #@driver.action.double_click(x).perform
-    #end
-    #cpbi_member = @driver.find_element(:xpath => '//*[@title="Members for CPBI"]')
-
-
-  end
+  #def test_Event_BackEnd
+  #  login_backend()
+  #  sleep 15
+  #  select_iframeid()
+  #  #puts @iframe.to_s
+  #  @driver.switch_to.frame(@iframe.to_s)
+  #
+  #  ####### Switch to explorer frame #######
+  #  list_home_iframe = @driver.find_elements(:tag_name => 'iframe')
+  #  get_explorer_iframe = list_home_iframe[3]
+  #  @driver.switch_to.frame(get_explorer_iframe)
+  #
+  #  ####### Switch to system view (tree) frame #######
+  #  list_system_view_iframe = @driver.find_elements(:tag_name => 'iframe')
+  #  get_system_view_iframe = list_system_view_iframe[0]
+  #  @driver.switch_to.frame(get_system_view_iframe)
+  #
+  #  ####### unwrap page source to each line, and click at 'CPBI Members' tree #######
+  #  tree_pagesource2 = @driver.page_source
+  #  tree_pagesource2 = tree_pagesource2.to_s
+  #  newline_tree = tree_pagesource2.gsub(/\>/, "\n")
+  #
+  #  @ary = Array.new
+  #  newline_tree.each_line do |line|
+  #
+  #    matcher_member = line.include? 'Members for CPBI'
+  #
+  #    if matcher_member
+  #
+  #      get_all_member = line.scan(/key[0-9]+/)
+  #
+  #      get_all_member.each do |key|
+  #        @ary.push(key)
+  #      end
+  #
+  #    end
+  #
+  #  end
+  #
+  #  #puts get_key_member = @ary[3]
+  #  get_key_member = @ary[3]
+  #  @driver.action.double_click(@driver.find_element(:xpath, '//*[@id="'+get_key_member+'"]')).perform
+  #  sleep 5
+  #
+  #  ####### unwrap page source to each line, and click at 'Users' tree #######
+  #  user_pagesource = @driver.page_source
+  #  user_pagesource = user_pagesource.to_s
+  #  newline_user = user_pagesource.gsub(/\>/, "\n")
+  #
+  #  @ary2 = Array.new
+  #  #newline_tree3.each_line do |x|
+  #  #
+  #  #  #reg = /Members for CPBI/
+  #  #
+  #  #  matcher = x.include? 'Users'
+  #  #
+  #  #  #matcher = x.scan('Members for CPBI')
+  #  #  if matcher
+  #  #    #matcher.each do |y|
+  #  #
+  #  #    matcher2 = x.scan(/key[0-9]+/)
+  #  #    matcher2.each do |z|
+  #  #      #puts z
+  #  #
+  #  #      @ary2.push(z)
+  #  #    end
+  #  #  end
+  #  #
+  #  #end
+  #
+  #  matcher_user = newline_user.scan(/key[0-9]+" label="Users"/)
+  #
+  #  matcher_user.each do |line|
+  #    get_all_user = line.scan(/key[0-9]+/)
+  #
+  #    get_all_user.each do |key|
+  #      @ary2.push(key)
+  #    end
+  #
+  #  end
+  #
+  #  #puts get_key_user = @ary2[1]
+  #  get_key_user = @ary2[1]
+  #  @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_user+'"]')).perform
+  #  sleep 5
+  #
+  #  @driver.switch_to.default_content
+  #  select_iframeid()
+  #  @driver.switch_to.frame(@iframe.to_s)
+  #
+  #  create_user_pagesource = @driver.page_source
+  #  create_user_pagesource = create_user_pagesource.to_s
+  #  newline_create_user = create_user_pagesource.gsub(/\>/, "\n")
+  #
+  #  @ary3 = Array.new
+  #
+  #  matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Manage Users"/)
+  #
+  #  if matcher_create_user.size > 1
+  #    matcher_create_user.each do |line|
+  #      get_all_create_user = line.scan(/key[0-9]+/)
+  #
+  #      get_all_create_user.each do |key|
+  #        @ary3.push(key)
+  #      end
+  #
+  #    end
+  #    get_key_create_user = @ary3[0]
+  #
+  #  else
+  #    get_key_create_user = matcher_create_user[0].scan(/key[0-9]+/)
+  #    get_key_create_user = get_key_create_user[0]
+  #  end
+  #
+  #
+  #  @driver.action.click(@driver.find_element(:xpath, '//*[@id="'+get_key_create_user+'"]')).perform
+  #  sleep 5
+  #
+  #  list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
+  #  get_main_iframe = list_main_iframe[2]
+  #  @driver.switch_to.frame(get_main_iframe)
+  #
+  #  main_content_pagesource = @driver.page_source
+  #  main_content_pagesource = main_content_pagesource.to_s
+  #  newline_main_content = main_content_pagesource.gsub(/\>/, "\n")
+  #
+  #  manage_user_iframe = @driver.find_elements(:tag_name => 'iframe')
+  #  manage_user_iframe = manage_user_iframe[0]
+  #  @driver.switch_to.frame(manage_user_iframe)
+  #
+  #  name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchName').send_key('Nuttapon')
+  #  @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
+  #
+  #  sleep 15
+  #
+  #
+  #  #if matcher
+  #  #  #puts x
+  #  #  key = x.scan(/key[0-9]+/)
+  #  #  puts key.size
+  #  #end
+  #
+  #
+  #  #if key.size > 1
+  #  #  key.each do |y|
+  #  #    count = 1
+  #  #    if count == 1
+  #  #
+  #  #      ### DO NOTHING
+  #  #    else
+  #  #
+  #  #      puts y[1]
+  #  #
+  #  #    end
+  #  #    count = count + 1
+  #  #  end
+  #  #
+  #  #end
+  #
+  #
+  #
+  #
+  #
+  #
+  #  #find_treenode = @driver.find_element(:xpath => '//*[@title="Members for CPBI"]').send_keys :arrow_down
+  #  #sleep 15
+  #
+  #  #tree_pagesource2 = @driver.page_source
+  #  #matches_frame_border[1 .. matches_frame_border.length].each do |x|
+  #  #  puts x.text
+  #  #
+  #  #end
+  #
+  #
+  #  #reg = /iframe id="[a-z]+[0-9]+"/
+  #  #matches = reg.match(tree_pagesource)
+  #  #matches[1 .. matches.length].each do |x|
+  #  #
+  #  #end
+  #  #@driver.switch_to.frame(@driver.find_elements(:tag_name => 'iframe').find_index(2))
+  #  #tree_pagesource = @driver.page_source
+  #
+  #  #tree_pagesource2 = tree_pagesource.gsub(/frameborder="0" /, '')
+  #
+  #  #reg = /iframe id="[a-z]+[0-9]+"/
+  #  #matches = reg.match(tree_pagesource)
+  #  #matches[1 .. matches.length].each do |x|
+  #  #  if x == 4
+  #  #    return x.text()
+  #  #  end
+  #  #end
+  #  #iframe_tree = x.text().match(/[a-z]+[0-9]+/)
+  #
+  #  #index = tree_pagesource2.to_s.match(/iframe id="[a-z]+[0-9]+"/)
+  #
+  #  #iframe_tree = index[2].match(/[a-z]+[0-9]+/)
+  #
+  #  #test = @driver.find_elements(:tag_name => 'iframe')
+  #  #test.each do |y|
+  #  #  puts y
+  #  #  #@driver.action.double_click(x).perform
+  #  #end
+  #  #test = @driver.find_elements(:tag_name, 'html')
+  #  #test.each do |x|
+  #  #puts x.text()
+  #  #@driver.action.double_click(x).perform
+  #  #end
+  #  #cpbi_member = @driver.find_element(:xpath => '//*[@title="Members for CPBI"]')
+  #
+  #
+  #end
 
 # Check Tool & Resources box, Members, News
   def assert_three_main_boxes
