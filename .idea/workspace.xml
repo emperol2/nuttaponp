@@ -32,18 +32,19 @@
     <file path="/a.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1382068997975" ignored="false" />
     <file path="/sx_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1382071140676" ignored="false" />
     <file path="/ICRA_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1384241756934" ignored="false" />
-    <file path="/homepage_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385545401526" ignored="false" />
-    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387596683079" ignored="false" />
+    <file path="/homepage_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389086046541" ignored="false" />
+    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1388743314741" ignored="false" />
     <file path="/fragment.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385357350831" ignored="false" />
     <file path="/testsuite_sx.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385458801274" ignored="false" />
-    <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387635370060" ignored="false" />
-    <file path="/cpbi_lib.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387274894948" ignored="false" />
+    <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389008264862" ignored="false" />
+    <file path="/cpbi_lib.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389002401540" ignored="false" />
     <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386851434246" ignored="false" />
     <file path="$PROJECT_DIR$/../monologue-0-3-stable/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1386851565806" ignored="false" />
-    <file path="/Job_Posting_Admin_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387633499377" ignored="false" />
+    <file path="/Job_Posting_Admin_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389088504349" ignored="false" />
     <file path="/csv_import_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387376054142" ignored="false" />
     <file path="/read_file.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387536079236" ignored="false" />
     <file path="/a.dummy" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387529527878" ignored="false" />
+    <file path="/unit.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389088495242" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,46 +64,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homepage_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="56" selection-start="9092" selection-end="9092" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICRA_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/ICRA_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backend_test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CPBI/backend_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="51" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.246281">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Job_Posting_Admin_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="41" selection-start="4637" selection-end="4637" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cpbi_lib.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
+            <state line="466" column="0" selection-start="12958" selection-end="12958" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="570" column="46" selection-start="20799" selection-end="20799" vertical-scroll-proportion="-6.72">
+              <folding>
+                <element signature="e#2158#4107#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Job_Posting_Admin_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="75" selection-start="897" selection-end="897" vertical-scroll-proportion="-4.1009617">
               <folding />
             </state>
           </provider>
@@ -131,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/testsuite/checkLogin" />
         <option value="$PROJECT_DIR$/testsuite/CheckLogin.rb" />
         <option value="$PROJECT_DIR$/testsuite/sx_test.rb" />
         <option value="$PROJECT_DIR$/testsuite/ICRA_test.rb" />
@@ -144,17 +128,18 @@
         <option value="$PROJECT_DIR$/CPBI/csv_import_test.rb" />
         <option value="$PROJECT_DIR$/read_file.rb" />
         <option value="$PROJECT_DIR$/CPBI/cpbi_lib.rb" />
-        <option value="$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb" />
-        <option value="$PROJECT_DIR$/CPBI/homepage_test.rb" />
         <option value="$PROJECT_DIR$/CPBI/backend_test.rb" />
+        <option value="$PROJECT_DIR$/CPBI/homepage_test.rb" />
+        <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb" />
+        <option value="$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1432" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -224,7 +209,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="appearance" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../monologue-0-3-stable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Publify" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -240,7 +225,7 @@
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\testsuite" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.backend_test">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Job_Posting_Admin_test">
     <configuration default="false" name="backend_test" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
@@ -365,7 +350,9 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -497,9 +484,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.backend_test" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Job_Posting_Admin_test" />
         <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.homepage_test" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Job_Posting_Admin_test" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.backend_test" />
         <item index="3" class="java.lang.String" itemvalue="Ruby.read_file" />
         <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.csv_import_test" />
       </list>
@@ -565,7 +552,11 @@
       <created>1387543034939</created>
       <updated>1387543034939</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed code for each test cases">
+      <created>1387635517361</created>
+      <updated>1387635517361</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -589,18 +580,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1296" height="1040" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16225165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23790322" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.6846361" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.267423" sideWeight="0.7108168" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29801324" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19225252" sideWeight="0.6469003" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3167116" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31536388" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28918323" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35309973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -654,7 +645,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added read file for string resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed code for each test cases" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -673,31 +664,17 @@
     <MESSAGE value="Added job posting admin test case" />
     <MESSAGE value="Added new cvs importer file" />
     <MESSAGE value="Added read file for string resources" />
+    <MESSAGE value="Fixed code for each test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="130" />
+      <option name="time" value="142" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testsuite/testsuite.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testsuite/CheckLogin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="441" selection-end="441" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stylexchange/testsuite_sx.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stylexchange/CheckLogin.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -715,16 +692,12 @@
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/mock.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="8" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.40938511">
-          <folding />
-        </state>
+        <state line="61" column="8" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.40938511" />
       </provider>
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/test-unit-2.5.5/lib/test/unit/assertions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="10" selection-start="4457" selection-end="4457" vertical-scroll-proportion="0.3322314">
-          <folding />
-        </state>
+        <state line="139" column="10" selection-start="4457" selection-end="4457" vertical-scroll-proportion="0.3322314" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read_file.rb">
@@ -734,51 +707,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="56" selection-start="9092" selection-end="9092" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/ICRA_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.38.0/lib/selenium/webdriver/remote/bridge.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="592" column="0" selection-start="15561" selection-end="15561" vertical-scroll-proportion="0.58512396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="41" selection-start="4637" selection-end="4637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="592" column="0" selection-start="15561" selection-end="15561" vertical-scroll-proportion="0.58512396" />
       </provider>
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.38.0/lib/selenium/webdriver/remote/response.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="0.33333334">
+        <state line="62" column="93" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.6634304" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/ICRA_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="24" selection-start="599" selection-end="599" vertical-scroll-proportion="0.4449838">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/csv_import_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CPBI/backend_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="51" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.246281">
+        <state line="66" column="46" selection-start="1905" selection-end="1905" vertical-scroll-proportion="0.5520661">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="572" column="0" selection-start="16546" selection-end="16546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="570" column="46" selection-start="20799" selection-end="20799" vertical-scroll-proportion="-6.72">
+          <folding>
+            <element signature="e#2158#4107#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="466" column="0" selection-start="12958" selection-end="12958" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="954" column="0" selection-start="24574" selection-end="24574" vertical-scroll-proportion="0.33264032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="75" selection-start="897" selection-end="897" vertical-scroll-proportion="-4.1009617">
           <folding />
         </state>
       </provider>

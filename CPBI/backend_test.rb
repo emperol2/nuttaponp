@@ -9,6 +9,8 @@ class BackEnd < Test::Unit::TestCase
 
   # Called before every test method runs. Can be used
   # to set up fixture information.
+  @@rand_user = nil
+  @@random_number  = nil
 
   def setup
     # Create Object from CPBI Library (cpbi_lib.rb)
@@ -26,6 +28,7 @@ class BackEnd < Test::Unit::TestCase
 
   # Fake test
   def test_Search_User_BackEnd
+
 
     # To change this template use File | Settings | File Templates.
     puts 'Starting - Normal Search User Back End'
@@ -55,7 +58,7 @@ class BackEnd < Test::Unit::TestCase
     @driver.switch_to.frame(manage_user_iframe)
 
     ##### Assert Empty and Find from UserID #####
-    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key('Nuttapon')
+    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchName').send_keys 'Nuttapon'
     @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
 
     sleep 10
@@ -63,11 +66,11 @@ class BackEnd < Test::Unit::TestCase
     get_total_number = @driver.find_element(:class => 'record-count').text
 
     #assert(get_total_number.scan(/Total number of records found: [1-9][0-9]+/), 'Number of records not found')
-    assert_empty(get_total_number.scan(/Total number of records found: [1-9][0-9]*/), 'Number of records not found')
+    assert_empty(get_total_number.scan(/Total number of records found: [1-9][0-9]*/), 'Nuttapon is not found in the record')
 
     ##### Assert Not Empty and Find from UserID #####
     @driver.find_element(:id => 'ctl00_MPFooter_btnNewSearch').click
-    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key('20041')
+    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_keys '0008'
     @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
 
     sleep 10
@@ -113,7 +116,7 @@ class BackEnd < Test::Unit::TestCase
 
     ##### Select Regular membership class and Fill all information #####
 
-    get_regular_class = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_rptMembershipClass_ctl01_rdoMembershipClass').click
+    get_regular_class = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_rptMembershipClass_ctl00_rdoMembershipClass').click
     sleep 5
     salutation = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_ddlSalutation_ddlLookupData')
     get_salutation = salutation.find_elements(:tag_name => 'option')
@@ -123,9 +126,9 @@ class BackEnd < Test::Unit::TestCase
       end
     end
 
-    @first_name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtFirstName').send_key(random_username)
+    @first_name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtFirstName').send_keys random_username
     last_name = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtLastName').send_key('Automation')
-    email = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtEmail').send_key('qa@openface.com')
+    email = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ctlAddressEditor_txtEmail').send_keys 'qa' + @@random_number + '@openface.com'
 
     yob = @driver.find_element(:id => 'ctl00_MPContent_ctlUserEditor_ddlBirthYear')
     get_yob = yob.find_elements(:tag_name => 'option')
@@ -257,7 +260,7 @@ class BackEnd < Test::Unit::TestCase
     @driver.switch_to.frame(manage_user_iframe)
 
     ##### Assert Empty and Find from UserID #####
-    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key(random_username)
+    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchName').send_keys @@rand_user
     @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
 
     sleep 10
@@ -265,11 +268,11 @@ class BackEnd < Test::Unit::TestCase
     get_total_number = @driver.find_element(:class => 'record-count').text
 
     #assert(get_total_number.scan(/Total number of records found: [1-9][0-9]+/), 'Number of records not found')
-    assert_empty(get_total_number.scan(/Total number of records found: [1-9][0-9]*/), 'Number of records not found')
+    assert_not_empty(get_total_number.scan(/Total number of records found: [1-9][0-9]*/), 'Number of records not found')
 
     ##### Assert Not Empty and Find from UserID #####
     @driver.find_element(:id => 'ctl00_MPFooter_btnNewSearch').click
-    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_key('20041')
+    @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_txtSearchUsername').send_keys('0001')
     @driver.find_element(:id => 'ctl00_MPContent_ctlUserSearchFilter_btnSearch').click
 
     sleep 10
@@ -400,9 +403,11 @@ class BackEnd < Test::Unit::TestCase
 
   def random_username
 
-    randx = Random.new(100)
-    random_number = (randx.rand * 20000).round
-    return 'QA '+random_number.to_s
+    randx = nil
+    randx = Random.new()
+    @@random_number = (randx.rand * 20000).round
+    @@random_number = @@random_number.to_s
+    @@rand_user = 'QA '+@@random_number.to_s
 
   end
 
