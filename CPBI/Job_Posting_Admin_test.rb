@@ -28,28 +28,19 @@ class JobPostingAdmin < Test::Unit::TestCase
     @verification_errors
   end
 
-  def test_Search_Job_Posting_BackEnd
+  def test_A_Search_Job_Posting_BackEnd
 
     # To change this template use File | Settings | File Templates.
     puts 'Starting - Search Job Posting BackEnd'
 
     @cpbi_backend.login_backend
-    sleep 20
+    sleep 10
     @iframe = @cpbi_backend.select_iframeid
-
-    @wait.until {@driver.find_element(:id => @iframe)}
-
+    @wait.until { @driver.find_element(:id => @iframe) }
     @driver.switch_to.frame(@iframe.to_s)
-
     @cpbi_backend.manage_job_posting
 
-    list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_main_iframe = list_main_iframe[2]
-    @driver.switch_to.frame(get_main_iframe)
-
-    list_job_posting_iframe = @driver.find_elements(:tag_name => 'iframe')
-    manage_job_posting_iframe = list_job_posting_iframe[0]
-    @driver.switch_to.frame(manage_job_posting_iframe)
+    switch_to_input_form()
 
     ##### Assert Manage Job Posting Page #####
     assert_equal('Manage Job Postings'.encode('UTF-8'), @driver.find_element(:tag_name => 'h1').text, 'Manage Job Posting Page NOT FOUND')
@@ -58,7 +49,7 @@ class JobPostingAdmin < Test::Unit::TestCase
     job_posting_number = '80043'.to_s
     @driver.find_element(:id => 'ctl00_MPContent_ctlSearchFilter_txtPostingId').send_keys job_posting_number
     @driver.find_element(:id => 'ctl00_MPContent_ctlSearchFilter_btnSearch').click
-    sleep 10
+    sleep 5
     get_total_job_number = @driver.find_element(:class => 'record-count').text
 
     if get_total_job_number.scan(/Total number of records found: [0]/).empty?
@@ -67,7 +58,6 @@ class JobPostingAdmin < Test::Unit::TestCase
     else
       puts 'This job posting number has not found'
     end
-
 
     @driver.find_element(:id => 'ctl00_MPFooter_btnNewSearch').click
 
@@ -78,7 +68,7 @@ class JobPostingAdmin < Test::Unit::TestCase
     ##### Search by Position title with Wildcard #####
     @driver.find_element(:id => 'ctl00_MPContent_ctlSearchFilter_txtPositionTitle').send_keys position_title_wildcard
     @driver.find_element(:id => 'ctl00_MPContent_ctlSearchFilter_btnSearch').click
-    sleep 10
+    sleep 5
     get_total_job_number = @driver.find_element(:class => 'record-count').text
     @cpbi_backend.verify { assert_empty(get_total_job_number.scan(/Total number of records found: [0]/), 'Number of records not found') }
     get_all_td = @driver.find_elements(:tag_name => 'td')
@@ -127,29 +117,20 @@ class JobPostingAdmin < Test::Unit::TestCase
 
   end
 
-  def test_Create_Job_Posting_BackEnd
+  def test_B_Create_Job_Posting_BackEnd
+    skip 'this functionality was removed from site.'
+
     # To change this template use File | Settings | File Templates.
     puts 'Starting - Create Job Posting BackEnd'
-
     clear()
-
     @cpbi_backend.login_backend
-    sleep 20
+    sleep 10
     @iframe = @cpbi_backend.select_iframeid
-
     @wait.until {@driver.find_element(:id => @iframe)}
-
     @driver.switch_to.frame(@iframe.to_s)
-
     @cpbi_backend.create_job_posting
 
-    list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
-    get_main_iframe = list_main_iframe[2]
-    @driver.switch_to.frame(get_main_iframe)
-
-    list_job_posting_iframe = @driver.find_elements(:tag_name => 'iframe')
-    manage_job_posting_iframe = list_job_posting_iframe[0]
-    @driver.switch_to.frame(manage_job_posting_iframe)
+    switch_to_input_form()
 
     ##### Assert Manage Job Posting Page #####
     assert_equal('Create new Job Posting'.encode('UTF-8'), @driver.find_element(:tag_name => 'h1').text, 'Create new Job Posting Page NOT FOUND')
@@ -167,8 +148,7 @@ class JobPostingAdmin < Test::Unit::TestCase
     @cpbi_backend.dropdown2value('ctl00_MPContent_ctlJobPostingEditor_ddlProvince', 'Alberta')
     @cpbi_backend.select('ctl00_MPContent_ctlJobPostingEditor_txtLocation').send_keys 'Canada '+random_number
     @cpbi_backend.select('ctl00_MPContent_ctlJobPostingEditor_dtpJobStartDate_txtDatePicker').click
-    #@wait.until {@driver.find_element(:id => 'ui-datepicker-div')}
-    #@cpbi_backend.select(':class', 'a.ui-state-default.ui-state-highlight').click
+
     time = Time.new
     @driver.find_element(:link => time.day).click
     @cpbi_backend.select('ctl00_MPContent_ctlJobPostingEditor_rteDescription').click
@@ -184,12 +164,6 @@ class JobPostingAdmin < Test::Unit::TestCase
     get_editor_desc_iframe = @driver.find_elements(:tag_name => 'iframe')
     @driver.switch_to.frame(get_editor_desc_iframe[0])
 
-    #a = @driver.page_source
-    #list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
-    #@iframe = @cpbi_backend.select_iframeid
-
-    #@wait.until {@driver.find_element(:id => 'editor_ifr')}
-    #@driver.switch_to.frame(@driver.find_element(:id => 'editor_ifr'))
     @cpbi_backend.select('tinymce').send_keys 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut auctor enim. Aenean nec lectus fringilla, pretium lacus nec, sodales ipsum. Vestibulum aliquam ipsum a lacus semper posuere.'
     @driver.switch_to.default_content
     get_iframe = @driver.find_elements(:tag_name => 'iframe')
@@ -209,10 +183,6 @@ class JobPostingAdmin < Test::Unit::TestCase
     get_main_iframe = nil
     get_main_iframe = @driver.find_elements(:tag_name => 'iframe')
     @driver.switch_to.frame(get_main_iframe[0])
-
-    #a = @driver.page_source
-    #list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
-    #@iframe = @cpbi_backend.select_iframeid
 
     @cpbi_backend.select('ctl00_MPContent_ctlJobPostingEditor_txtJobWebsite').send_keys 'www.google.com'
     @cpbi_backend.select('ctl00_MPContent_ctlJobPostingEditor_btnSave').click
@@ -239,6 +209,16 @@ class JobPostingAdmin < Test::Unit::TestCase
 
   def clear
     eval %q{ local_variables.each { |e| eval("#{e} = nil") } }
+  end
+
+  def switch_to_input_form
+    list_main_iframe = @driver.find_elements(:tag_name => 'iframe')
+    get_main_iframe = list_main_iframe[2]
+    @driver.switch_to.frame(get_main_iframe)
+
+    manage_user_iframe = @driver.find_elements(:tag_name => 'iframe')
+    manage_user_iframe = manage_user_iframe[0]
+    @driver.switch_to.frame(manage_user_iframe)
   end
 
 end
