@@ -7,8 +7,8 @@ class CPBI_backend
   def initialize
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.window.maximize
-    @driver.manage.timeouts.implicit_wait = 15
-    @wait = Selenium::WebDriver::Wait.new :timeout => 60
+    @driver.manage.timeouts.implicit_wait = 20
+    @wait = Selenium::WebDriver::Wait.new :timeout => 120
     @verification_errors = []
   end
 
@@ -27,11 +27,12 @@ class CPBI_backend
   def login_backend
     # if start from dev site
     # @driver.get('http://icra-dev.openface.com/Composite/top.aspx')
-    @driver.get('http://qa.cpbi-icra.ca/Composite/top.aspx')
+    @driver.get('http://preview.cpbi-icra.ca/Composite/top.aspx')
     @wait.until { @driver.find_element(:css => 'input[name="username"]') }
     @driver.find_element(:css => 'input[name="username"]').send_key('ofsupport')
     @driver.find_element(:css => 'input[name="password"]').send_key('0p3nf4c3')
     @driver.find_element(:css => 'input[name="password"]').send_keys :return
+    sleep 80
   end
 
   # select the first iframe id after logged in Admin site
@@ -366,5 +367,27 @@ class CPBI_backend
     @verification_errors << ex
   end
 
+  def getAnyLocator(*locator)
+
+    str_pattern = /ctl[0-9]*_ctl[0-9]*_phContent_ctl[0-9]*_ctl/
+    pageSource = @driver.page_source.to_s
+    splitToNewline = pageSource.gsub(/\>/, ">\r\n")
+
+    splitToNewline.each_line do |line|
+      splitAddID = locator[35, locator.length()]
+      lines_matcher = line.include? splitAddID
+      if lines_matcher
+        each_line_matcher = line.scan(str_pattern)
+        if each_line_matcher
+          getID_matcher = line.scan(/id="ctl[0-9]*_ctl[0-9]*_phContent_ctl[0-9]*_ctl[a-zA-z0-9]*"/)
+          return getID_matcher
+        else
+          getID_matcher = line.scan(/id="ctl[a-zA-z0-9]*"/)
+          return getID_matcher
+        end
+      end
+    end
+
+  end
 
 end
