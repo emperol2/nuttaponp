@@ -14,7 +14,7 @@ class JobPostingAdmin < Test::Unit::TestCase
 
   def setup
     # Create Object from CPBI Library (cpbi_lib.rb)
-    @cpbi_backend = CPBI_backend.new
+    @cpbi_backend = CPBI_lib.new
     @driver = @cpbi_backend.driver
     @wait = @cpbi_backend.wait
     @verification_errors = []

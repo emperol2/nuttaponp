@@ -15,7 +15,7 @@ class Homepage < Test::Unit::TestCase
     # Do nothing
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.window.maximize
-    @base_url = 'http://preview.cpbi-icra.ca'
+    @base_url = 'http://qa.cpbi-icra.ca'
     @driver.manage.timeouts.implicit_wait = 10
     @wait = Selenium::WebDriver::Wait.new :timeout => 60
     @verification_errors = []
@@ -43,6 +43,7 @@ class Homepage < Test::Unit::TestCase
     assert_equal(login, 'LOG IN'.encode('UTF-8'))
     username_field = @driver.find_element(:id => 'UserName')
     password_field = @driver.find_element(:id => 'Password')
+    # Check if there are username and password fields, this mean the user has not logged in yet
     assert_not_nil(username_field)
     assert_not_nil(password_field)
     p 'Ended - Homepage without log in case\n'
@@ -65,6 +66,7 @@ class Homepage < Test::Unit::TestCase
     @driver.find_element(:id => 'Password').send_key('LE0001')
     @driver.find_element(:id => 'btnLogin').click
     @id_number = /[1-9][0-9]*/
+    # Is My Account link showing ? (logged in)
     if element_present?(:id, 'ctl00_ctl00_ctl37_ctlLoginView_lnkMyAccount')
       myaccount_link = @driver.find_element(:id => 'ctl00_ctl00_ctl37_ctlLoginView_lnkMyAccount')
       myname = @driver.find_element(:id => 'ctl00_ctl00_ctl37_ctlLoginView_lblLogonUser').text
@@ -72,7 +74,7 @@ class Homepage < Test::Unit::TestCase
       logon_name = @driver.find_element(:id => 'lblLogonUser').text
       assert_not_nil(myaccount_link)
       verify { assert_equal(myname, 'MR. NUTTAPON PICHETPONGSA'.encode('UTF-8'), 'You are already logged on but you are not Nuttapon') }
-      assert_equal(logon_name, myname, 'Name on my account link and my account page are not equal')
+      assert_equal(logon_name, myname, 'Name on My Account Link and My Account Page are not Equal')
       assert(logon_panel)
     else
       fail('My account link does not present')
@@ -107,7 +109,7 @@ class Homepage < Test::Unit::TestCase
 
   end
 
-  def test_D_Sign_up_NonMember
+  def test_D_SignUp
     p 'Started - Sign up non-member case'
     @driver.get(@base_url)
     @driver.find_element(:id => 'lnkSignupPage').click
@@ -165,7 +167,7 @@ class Homepage < Test::Unit::TestCase
     p 'Started - Tax exempt case'
     @driver.get(@base_url)
     @driver.find_element(:id => 'lnkSignupPage').click
-    assert_match('Sign Up for CPBI Profile', @driver.find_element(:css => '#contentcolumn h1').text, 'Not in Sign up page')
+    assert_match('Sign Up for CPBI Profile', @driver.find_element(:css => '#contentcolumn h1').text, 'You are not on Sign up page')
 
     @driver.find_element(:name => 'ctl00$ctl00$phContent$ctl11$rptMembershipClass$ctl01$MembershipCategory').click
     sleep 3

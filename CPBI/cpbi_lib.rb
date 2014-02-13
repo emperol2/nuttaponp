@@ -2,7 +2,7 @@ require 'selenium-webdriver'
 require 'rubygems'
 require 'test/unit'
 
-class CPBI_backend
+class CPBI_lib
   # To change this template use File | Settings | File Templates.
   def initialize
     @driver = Selenium::WebDriver.for :firefox
@@ -26,8 +26,8 @@ class CPBI_backend
 
   def login_backend
     # if start from dev site
-    # @driver.get('http://icra-dev.openface.com/Composite/top.aspx')
-    @driver.get('http://preview.cpbi-icra.ca/Composite/top.aspx')
+    @driver.get('http://qa.cpbi-icra.ca/Composite/top.aspx')
+    # @driver.get('http://preview.cpbi-icra.ca/Composite/top.aspx')
     @wait.until { @driver.find_element(:css => 'input[name="username"]') }
     @driver.find_element(:css => 'input[name="username"]').send_key('ofsupport')
     @driver.find_element(:css => 'input[name="password"]').send_key('0p3nf4c3')
