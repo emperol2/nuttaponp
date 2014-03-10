@@ -2,7 +2,7 @@ require 'selenium-webdriver'
 require 'rubygems'
 require 'test/unit'
 
-class CPBI_lib
+class CPBI_lib < Test::Unit::TestCase
   # To change this template use File | Settings | File Templates.
   def initialize
     @driver = Selenium::WebDriver.for :firefox
@@ -109,9 +109,9 @@ class CPBI_lib
 
     # select Create User or Manage User
     if where == 'Create User'
-    matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Create User"/)
+      matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Create User"/)
     else
-    matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Manage Users"/)
+      matcher_create_user = newline_create_user.scan(/key[0-9]+" label="Manage Users"/)
     end
 
     if matcher_create_user.size > 1
@@ -388,6 +388,54 @@ class CPBI_lib
       end
     end
 
+  end
+
+  def getCodeError
+    pageSource = @driver.page_source.to_s
+    splitToNewline = pageSource.gsub(/\>/, ">\r\n")
+    splitToNewline.each_line do |line|
+      lines_matcher = line.include? "<code"
+      #if lines_matcher
+      assert_false(lines_matcher, 'Found Code Error or Server Page')
+      #p 'found Code Error or Server Page'
+      #end
+    end
+  end
+
+  def getErrorBox
+    # errorBox = @driver.find_element(:css => div.c1errordetails)
+    #if element_present?(:css, 'div.c1errordetails') || element_present?(:css, 'span.c1error')
+    #  true
+    #end
+    c1errordetail = element_present?(:css, 'div.c1errordetails')
+    c1error = element_present?(:css, 'span.c1error')
+    #if c1errordetail
+    assert_false(c1errordetail, 'Found Code Error or Server Page')
+    #elsif c1error
+    assert_false(c1error, 'Found Code Error or Server Page')
+    #end
+
+  end
+
+  def element_present?(how, what)
+    found = @driver.find_element(how => what)
+    if found
+      true # return true if this element is found
+    else
+      false # return false if this element is not found
+    end
+  rescue Selenium::WebDriver::Error::NoSuchElementError # catch if NoSuchElementError appears
+    false
+  end
+
+  module Test::Unit::Assertions
+    def assert_contains(expected_substring, string, *args)
+      assert string.include?(expected_substring), *args
+    end
+
+    def assert_false(object, message = '')
+      assert_equal(false, object, message)
+    end
   end
 
 end
