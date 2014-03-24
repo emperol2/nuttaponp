@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/HN_cucumber/features/demo.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/HN_cucumber/features/step_definitions/demo_steps.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/HN_cucumber/features/support/env.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/HN_cucumber/features/health_team_list.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/HN_cucumber/features/patient_profile.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/HN_cucumber/features/provider_log_in_out.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RubyWebDriver.iml" afterPath="$PROJECT_DIR$/.idea/RubyWebDriver.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPBI/cpbi_lib.rb" afterPath="$PROJECT_DIR$/CPBI/cpbi_lib.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" afterPath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RubyWebDriver.iws" />
@@ -32,12 +39,12 @@
     <file path="/sx_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1382071140676" ignored="false" />
     <file path="/ICRA_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391159644464" ignored="false" />
     <file path="/homepage_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391505583256" ignored="false" />
-    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1394444981621" ignored="false" />
+    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395387351856" ignored="false" />
     <file path="/fragment.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385357350831" ignored="false" />
     <file path="/testsuite_sx.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385458801274" ignored="false" />
     <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1390220503991" ignored="false" />
     <file path="/cpbi_lib.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1392804265755" ignored="false" />
-    <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391156814014" ignored="false" />
+    <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395226203911" ignored="false" />
     <file path="$PROJECT_DIR$/../monologue-0-3-stable/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389172966300" ignored="false" />
     <file path="/Job_Posting_Admin_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391507680603" ignored="false" />
     <file path="/csv_import_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387376054142" ignored="false" />
@@ -71,6 +78,14 @@
     <file path="$PROJECT_DIR$/../letustest/app/controllers/testers_controller.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1392705058376" ignored="false" />
     <file path="$PROJECT_DIR$/../letustest/app/models/user.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1392705058376" ignored="false" />
     <file path="$PROJECT_DIR$/../letustest/config/routes.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1392705058376" ignored="false" />
+    <file path="/demo.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395230505585" ignored="false" />
+    <file path="/demo_steps.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395230951311" ignored="false" />
+    <file path="/env.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1394702980392" ignored="false" />
+    <file path="/test_nonEN_chars" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395056664207" ignored="false" />
+    <file path="/test_nonEN_chars.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395308208150" ignored="false" />
+    <file path="/provider_log_in_out.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395398557238" ignored="false" />
+    <file path="/patient_profile.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395399006227" ignored="false" />
+    <file path="/health_team_list.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395399552838" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,50 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Job_Posting_Admin_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb">
+      <file leaf-file-name="health_team_list.feature" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/features/health_team_list.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="37" selection-start="8600" selection-end="8600" vertical-scroll-proportion="0.0">
+            <state line="6" column="56" selection-start="173" selection-end="173" vertical-scroll-proportion="0.15083799">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Member_Admin.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/Member_Admin.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="51" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homepage_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="4" selection-start="5552" selection-end="5674" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cpbi_lib.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="423" column="53" selection-start="12440" selection-end="12440" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="onLive_test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="76" selection-start="654" selection-end="654" vertical-scroll-proportion="0.5587248">
-              <folding>
-                <element signature="e#5479#6043#0" expanded="false" />
-                <element signature="e#6047#6402#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,14 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CPBI/test-unit.yml" />
-        <option value="$PROJECT_DIR$/CPBI/test_helper.rb" />
-        <option value="$PROJECT_DIR$/CPBI/my_test2.rb" />
-        <option value="$PROJECT_DIR$/CPBI/my_test.rb" />
-        <option value="$PROJECT_DIR$/CPBI/backend_test.rb" />
-        <option value="$PROJECT_DIR$/CPBI/homepage-backup" />
-        <option value="$PROJECT_DIR$/CPBI/postgresql.rb" />
-        <option value="$PROJECT_DIR$/get_any_locator.rb" />
         <option value="$PROJECT_DIR$/webdriver_helper.rb" />
         <option value="$PROJECT_DIR$/CPBI/ICRA_test.rb" />
         <option value="$PROJECT_DIR$/CPBI/Member_Admin.rb" />
@@ -177,14 +145,22 @@
         <option value="$APPLICATION_HOME_DIR$/rubystubs193/kernel.rb" />
         <option value="$PROJECT_DIR$/CPBI/cpbi_lib.rb" />
         <option value="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+        <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/support/env.rb" />
+        <option value="$PROJECT_DIR$/Nexa/test_nonEN_chars" />
+        <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/demo.feature" />
+        <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/step_definitions/demo_steps.rb" />
+        <option value="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
+        <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/provider_log_in_out.feature" />
+        <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/patient_profile.feature" />
+        <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/health_team_list.feature" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1432" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -241,7 +217,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CPBI" />
+              <option name="myItemId" value="Nexa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyWebDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyWebDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HealthNow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HN_cucumber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyWebDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyWebDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HealthNow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HN_cucumber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,10 +276,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CPBI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPBI-Live" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,22 +295,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\HealthNow\HN_cucumber" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\testsuite" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\Stylexchange" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\HealthNow\HN_cucumber\examples" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\CPBI\CPBI-Unused" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\CPBI" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\Stylexchange" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\testsuite" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.onLive_test">
-    <configuration default="false" name="onLive_test" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_new_application_CRM">
+    <configuration default="false" name="test_new_application" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -306,10 +324,10 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_application" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
@@ -318,11 +336,11 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_LibraryWithoutLogin" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_new_contact" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -334,9 +352,9 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_LibraryWithoutLogin" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_contact" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
@@ -344,11 +362,11 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_homeUpcomingEvent" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_new_contact_CRM" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -360,9 +378,9 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_homeUpcomingEvent" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_contact_CRM" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
@@ -370,11 +388,11 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_News" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_new_Agent_CRM" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -386,9 +404,9 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_News" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_Agent_CRM" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
@@ -396,11 +414,11 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test_jobDetails" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="test_new_application_CRM" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -412,9 +430,9 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_jobDetails" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_application_CRM" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
@@ -561,19 +579,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Ruby.webdriver_helper" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.onLive_test" />
-      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_LibraryWithoutLogin" />
-      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_homeUpcomingEvent" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_News" />
-      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_jobDetails" />
+      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact" />
+      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_CRM" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_CRM" />
+      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application_CRM" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.onLive_test" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_jobDetails" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_LibraryWithoutLogin" />
-        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_News" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_homeUpcomingEvent" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application_CRM" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_CRM" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_CRM" />
+        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application" />
+        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact" />
       </list>
     </recent_temporary>
   </component>
@@ -657,7 +675,11 @@
       <created>1392278261918</created>
       <updated>1392278261918</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="code refactoring and CPBI on live test">
+      <created>1394451773233</created>
+      <updated>1394451773233</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -681,18 +703,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1296" height="1040" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16225165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23790322" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16172507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23719676" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.6846361" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19124797" sideWeight="0.70088303" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38814017" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20659971" sideWeight="0.84097034" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38679245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35320088" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.299117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15902965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -746,7 +768,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed code cpbi" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactoring and CPBI on live test" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -770,108 +792,124 @@
     <MESSAGE value="updated test script, code refactoring" />
     <MESSAGE value="added getAnyLocator method" />
     <MESSAGE value="changed code cpbi" />
+    <MESSAGE value="code refactoring and CPBI on live test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="163" />
+      <option name="time" value="172" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CPBI/my_test.rb">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/capybara-2.1.0/lib/capybara/node/finders.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="311" selection-end="311" vertical-scroll-proportion="0.037894737" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/csv_import_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs193/date.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="6" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-0.6905263" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read_file.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/test-unit-2.5.5/lib/test/unit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="309" column="9" selection-start="11759" selection-end="11759" vertical-scroll-proportion="-0.11618257" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="10" selection-start="6303" selection-end="6303" vertical-scroll-proportion="8.961039" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit/testcase.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="37" selection-start="8600" selection-end="8600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/Member_Admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="51" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="965" column="0" selection-start="24920" selection-end="24920" vertical-scroll-proportion="0.33195022" />
+        <state line="40" column="43" selection-start="1814" selection-end="1839" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CPBI/homepage_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="4" selection-start="5552" selection-end="5674" vertical-scroll-proportion="0.0">
+        <state line="247" column="53" selection-start="11255" selection-end="11255" vertical-scroll-proportion="0.2347084">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/childprocess-0.3.9/lib/childprocess/abstract_process.rb">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/common/navigation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="2708" selection-end="2708" vertical-scroll-proportion="0.3326316" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/test-unit-2.5.5/lib/test/unit/testcase.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="51" selection-start="2056" selection-end="2056" vertical-scroll-proportion="-24.730526" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/test-unit-2.5.5/lib/test/unit/assertions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1059" column="10" selection-start="36282" selection-end="36282" vertical-scroll-proportion="0.33333334">
+        <state line="12" column="10" selection-start="183" selection-end="183" vertical-scroll-proportion="0.31487888">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/examples/features_HN/step_definitions/demo_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="423" column="53" selection-start="12440" selection-end="12440" vertical-scroll-proportion="0.0">
+        <state line="7" column="59" selection-start="268" selection-end="268" vertical-scroll-proportion="0.21070234">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="76" selection-start="654" selection-end="654" vertical-scroll-proportion="0.5587248">
-          <folding>
-            <element signature="e#5479#6043#0" expanded="false" />
-            <element signature="e#6047#6402#0" expanded="false" />
-          </folding>
+        <state line="10" column="48" selection-start="190" selection-end="190" vertical-scroll-proportion="0.25604552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/firefox.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="47" selection-start="444" selection-end="444" vertical-scroll-proportion="0.25139666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/common/search_context.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="53" selection-end="53" vertical-scroll-proportion="0.05027933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/common/driver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="73" selection-start="2566" selection-end="2576" vertical-scroll-proportion="0.48324022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nexa/test_nonEN_chars.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="57" selection-start="932" selection-end="932" vertical-scroll-proportion="0.742532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/examples/features/demo.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/examples/features_HN/demo.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="174" selection-end="174" vertical-scroll-proportion="0.12569833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/features/demo.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="0" selection-end="984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/features/provider_log_in_out.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="49" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/features/patient_profile.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/features/step_definitions/demo_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="24" selection-start="773" selection-end="773" vertical-scroll-proportion="0.8547486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HealthNow/HN_cucumber/features/health_team_list.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="56" selection-start="173" selection-end="173" vertical-scroll-proportion="0.15083799">
+          <folding />
         </state>
       </provider>
     </entry>
