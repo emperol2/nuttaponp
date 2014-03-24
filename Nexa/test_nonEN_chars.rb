@@ -326,7 +326,7 @@ class TestNonEN < Test::Unit::TestCase
     login_CRM()
     #@driver.find_element(:link_text, 'Contacts').click
     #@driver.find_element(:link_text, 'Add a New Contact').click
-    @driver.navigate.to('https://216.46.31.242/Nexa/index.html?_flowId=manageContactCrm-flow&_initialViewId=AddContactCrm')
+    @driver.navigate.to('https://216.46.31.242/Nexa/index.html?_flowId=manageAgentProfile-flow&_initialViewId=AddAgentProfile')
 
     getAllInputFields = @driver.find_elements(:tag_name, 'input')
     getAllInputFields.each_with_index do |x, index|
@@ -348,6 +348,8 @@ class TestNonEN < Test::Unit::TestCase
 
           if @attrName.include? 'start'
             puts 'has calendar'
+          elsif @attrName.include? 'agentProfile.tollFreeNumber'
+            x.send_keys '1-877-777-4511'
           else
             @attrName = @attrName.split('.')
             @attrName = @attrName[1]
@@ -366,11 +368,6 @@ class TestNonEN < Test::Unit::TestCase
 
   end
 
-
-
-
-
-
   def login
     @driver.find_element(:id, 'txtUsername').send_keys 'nuttapon'
     @driver.find_element(:id, 'txtPassword').send_keys '12345'
@@ -379,8 +376,8 @@ class TestNonEN < Test::Unit::TestCase
   end
 
   def login_CRM
-    @driver.find_element(:id, 'txtUsername').send_keys 'kwan1'
-    @driver.find_element(:id, 'txtPassword').send_keys 'kwan1'
+    @driver.find_element(:id, 'txtUsername').send_keys 'user'
+    @driver.find_element(:id, 'txtPassword').send_keys 'patcharin'
     @driver.find_element(:id, 'chkAgreeToTermsAndUse').click
     @driver.find_element(:xpath, '//*[@id="loginForm"]/table/tbody/tr[5]/td[2]/input').click
   end
