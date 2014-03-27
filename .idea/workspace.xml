@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RubyWebDriver.iml" afterPath="$PROJECT_DIR$/.idea/RubyWebDriver.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" afterPath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shred-tech/Galen/galenjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HealthNow/RobotFramework/hnlogin.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shred-tech/Galen/landingPage.spec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shred-tech/Galen/seriesLanding.spec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shred-tech/Galen/shredTech.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" afterPath="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="5804713c-d9d5-48ef-b8df-479466e19d3a" name="New changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" afterPath="$PROJECT_DIR$/CPBI/CPBI-Live/onLive_test.rb" />
     </list>
     <ignored path="RubyWebDriver.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,19 +38,19 @@
     <file path="/sx_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1382071140676" ignored="false" />
     <file path="/ICRA_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391159644464" ignored="false" />
     <file path="/homepage_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391505583256" ignored="false" />
-    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395718871471" ignored="false" />
+    <file path="/Dummy.txt" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395818743595" ignored="false" />
     <file path="/fragment.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385357350831" ignored="false" />
     <file path="/testsuite_sx.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1385458801274" ignored="false" />
     <file path="/backend_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1390220503991" ignored="false" />
     <file path="/cpbi_lib.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1392804265755" ignored="false" />
-    <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395226203911" ignored="false" />
+    <file path="/Ruby Console" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395737064647" ignored="false" />
     <file path="$PROJECT_DIR$/../monologue-0-3-stable/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389172966300" ignored="false" />
     <file path="/Job_Posting_Admin_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391507680603" ignored="false" />
     <file path="/csv_import_test.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387376054142" ignored="false" />
     <file path="/read_file.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1387536079236" ignored="false" />
-    <file path="/a.dummy" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1391160267783" ignored="false" />
+    <file path="/a.dummy" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395738373807" ignored="false" />
     <file path="/unit.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389088495242" ignored="false" />
-    <file path="/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1392704253919" ignored="false" />
+    <file path="/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395741949149" ignored="false" />
     <file path="$PROJECT_DIR$/../monologue-0-3-stable/monologue.gemspec" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389239345408" ignored="false" />
     <file path="/monologue.gemspec" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389241811327" ignored="false" />
     <file path="$PROJECT_DIR$/../monologue-0-3-stable/config/routes.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1389240264892" ignored="false" />
@@ -75,10 +81,23 @@
     <file path="/demo_steps.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395230951311" ignored="false" />
     <file path="/env.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1394702980392" ignored="false" />
     <file path="/test_nonEN_chars" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395056664207" ignored="false" />
-    <file path="/test_nonEN_chars.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395641091363" ignored="false" />
+    <file path="/test_nonEN_chars.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395731211511" ignored="false" />
     <file path="/provider_log_in_out.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395398557238" ignored="false" />
     <file path="/patient_profile.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395399006227" ignored="false" />
     <file path="/health_team_list.feature" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395399552838" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Shred-Tech/Shred-Tech/app/controllers/application_controller.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395735945567" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rails-2.3.14/helpers/application_controller.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395736337118" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-2.3.14/lib/active_support/inflector.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395736667444" ignored="false" />
+    <file path="/inflector.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395736667444" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/site_ruby/1.9.1/rubygems/test_case.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395737004667" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/site_ruby/1.9.1/rubygems/errors.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395737004667" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Shred-Tech/Shred-Tech/config/preinitializer.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395738079777" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-2.3.14/lib/active_support/dependencies.rb" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395738701202" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Shred-Tech/Shred-Tech/Gemfile" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395742087825" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Shred-Tech/Shred-Tech/Gemfile.lock" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395740211864" ignored="false" />
+    <file path="/landingPage.spec" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395822176648" ignored="false" />
+    <file path="/shredTech.test" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395829767044" ignored="false" />
+    <file path="/seriesLanding.spec" changelist="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" time="1395830725734" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +120,34 @@
       <file leaf-file-name="test_nonEN_chars.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nexa/test_nonEN_chars.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="363" column="32" selection-start="12611" selection-end="12611" vertical-scroll-proportion="0.3086771">
+            <state line="11" column="36" selection-start="262" selection-end="262" vertical-scroll-proportion="0.28165007">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="landingPage.spec" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/landingPage.spec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="43" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shredTech.test" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/shredTech.test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="25" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seriesLanding.spec" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/seriesLanding.spec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="50" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/webdriver_helper.rb" />
-        <option value="$PROJECT_DIR$/CPBI/ICRA_test.rb" />
-        <option value="$PROJECT_DIR$/CPBI/Member_Admin.rb" />
         <option value="$PROJECT_DIR$/CPBI/homepage_test.rb" />
         <option value="$PROJECT_DIR$/CPBI/Job_Posting_Admin_test.rb" />
         <option value="$APPLICATION_HOME_DIR$/rubystubs193/kernel.rb" />
@@ -146,6 +189,9 @@
         <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/patient_profile.feature" />
         <option value="$PROJECT_DIR$/HealthNow/HN_cucumber/features/health_team_list.feature" />
         <option value="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
+        <option value="$PROJECT_DIR$/Shred-tech/Galen/landingPage.spec" />
+        <option value="$PROJECT_DIR$/Shred-tech/Galen/shredTech.test" />
+        <option value="$PROJECT_DIR$/Shred-tech/Galen/seriesLanding.spec" />
       </list>
     </option>
   </component>
@@ -209,7 +255,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Nexa" />
+              <option name="myItemId" value="Shred-tech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Galen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyWebDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RubyWebDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HealthNow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RobotFramework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -239,89 +307,30 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Shred-Tech/Shred-Tech" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../letustest-pre" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\Shred-tech\Galen" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\HealthNow\HN_cucumber" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\testsuite" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\Stylexchange" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\HealthNow\RobotFramework" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\HealthNow\HN_cucumber\examples" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\CPBI\CPBI-Unused" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\CPBI" />
       <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\Stylexchange" />
-      <recent name="C:\Users\nuttapon\RubymineProjects\RubyWebDriver\testsuite" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_new_contact_DLC">
-    <configuration default="false" name="test_new_contact_CRM" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="RubyWebDriver" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_contact_CRM" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test_new_Agent_CRM" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="RubyWebDriver" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_Agent_CRM" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_add_new_extendedField">
     <configuration default="false" name="test_new_application_CRM" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="RubyWebDriver" />
@@ -406,6 +415,68 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_new_contact_DLC" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_add_new_extendedField" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="RubyWebDriver" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_add_new_extendedField" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestNonEN" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="RubyWebDriver" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/Nexa" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/Nexa/test_nonEN_chars.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <RunnerSettings RunnerId="RubyRunner" />
@@ -575,19 +646,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Ruby.webdriver_helper" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_CRM" />
-      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_CRM" />
-      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application_CRM" />
-      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_Contact_CRM" />
-      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_DLC" />
+      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application_CRM" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_Contact_CRM" />
+      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_DLC" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_add_new_extendedField" />
+      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.TestNonEN" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_DLC" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_Contact_CRM" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application_CRM" />
-        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_CRM" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_CRM" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_add_new_extendedField" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.TestNonEN" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_contact_DLC" />
+        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_Agent_Contact_CRM" />
+        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_new_application_CRM" />
       </list>
     </recent_temporary>
   </component>
@@ -612,6 +683,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e71e6708-ed6c-4a3f-a8b1-3b4a3dcfc2f5" name="Default" comment="" />
+      <changelist id="5804713c-d9d5-48ef-b8df-479466e19d3a" name="New changelist" comment="" />
       <created>1373437936280</created>
       <updated>1373437936280</updated>
     </task>
@@ -675,7 +747,11 @@
       <created>1394451773233</created>
       <updated>1394451773233</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="from local">
+      <created>1395720079747</created>
+      <updated>1395720079747</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -706,11 +782,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23719676" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24837662" sideWeight="0.66561514" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2159254" sideWeight="0.6671159" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38679245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15997131" sideWeight="0.66777045" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31677705" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35320088" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3328841" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33116037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -764,7 +840,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactoring and CPBI on live test" />
+    <option name="LAST_COMMIT_MESSAGE" value="from local" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -789,13 +865,14 @@
     <MESSAGE value="added getAnyLocator method" />
     <MESSAGE value="changed code cpbi" />
     <MESSAGE value="code refactoring and CPBI on live test" />
+    <MESSAGE value="from local" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="172" />
+      <option name="time" value="175" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -848,9 +925,47 @@
         <state line="11" column="51" selection-start="219" selection-end="219" vertical-scroll-proportion="0.42217484" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CPBI/cpbi_lib.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="426" column="9" selection-start="12514" selection-end="12559" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="954" column="0" selection-start="24574" selection-end="24574" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/landingPage.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="43" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/shredTech.test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/seriesLanding.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="50" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shred-tech/Galen/galenjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.23044097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Nexa/test_nonEN_chars.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="32" selection-start="12611" selection-end="12611" vertical-scroll-proportion="0.3086771">
+        <state line="11" column="36" selection-start="262" selection-end="262" vertical-scroll-proportion="0.28165007">
           <folding />
         </state>
       </provider>

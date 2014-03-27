@@ -1,0 +1,11 @@
+*** Settings ***
+Library       Selenium2Library
+
+*** Testcases ***
+Login Should Succeed When the Correct Username and Password are Entered
+  Open Browser  http://qa.healthnow.com/pages/login.aspx  firefox
+  Maximize Browser Window
+  Input Text  txtUsername	papajohn_jr
+  Input Text  txtPassword	1981papajohn_jr
+  Click Element  btnLogin
+  Title Should Be	Profile

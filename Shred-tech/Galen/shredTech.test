@@ -1,0 +1,15 @@
+Landing page on Desktop
+     https://my.healthnow.net/Pages/Login.aspx
+        check landingPage.spec
+
+Series Landing page on Desktop
+     https://my.healthnow.net/Pages/Login.aspx
+        check seriesLanding.spec
+
+System Product page on Desktop
+     https://my.healthnow.net/Pages/Login.aspx
+        check systemPd.spec
+
+System Product (Video) page on Desktop
+     https://my.healthnow.net/Pages/Login.aspx
+        check systemPdVideo.spec

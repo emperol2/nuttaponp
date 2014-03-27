@@ -13,8 +13,8 @@ class TestNonEN < Test::Unit::TestCase
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.window.maximize
     @base_url = 'https://216.46.31.242/Nexa/login.html'
-    @driver.manage.timeouts.implicit_wait = 10
-    @wait = Selenium::WebDriver::Wait.new :timeout => 20
+    @driver.manage.timeouts.implicit_wait = 20
+    @wait = Selenium::WebDriver::Wait.new :timeout => 30
   end
 
   # Called after every test method runs. Can be used to tear
@@ -383,47 +383,7 @@ class TestNonEN < Test::Unit::TestCase
     @driver.navigate.to('https://216.46.31.242/Nexa/index.html?_flowId=viewApplicationPage-flow&_initialViewId=AddApplication')
 
     # Add an extended field
-    @driver.find_element(:link_text, '+ Add an extended field').click
-
-    (1..100).each_with_index do |y, index_field|
-
-      @driver.find_element(:id, 'extendedField.englishCaption').send_keys 'test'+index_field.to_s
-      getTypeObject = @driver.find_element(:id, 'extendedField.extendedFieldTypeId')
-      getList = getTypeObject.find_elements(:tag_name, 'option')
-
-      getList.each do |option|
-        # select text
-        if option.text == 'Text'
-          option.click
-
-        end
-      end
-
-      @wait.until {
-        element = @driver.find_element(:xpath => '//*[@id="extendedField.extendedFieldFormatId"]')
-        element if element.display?
-      }
-
-
-      secList = @driver.find_element(:id, 'extendedField.extendedFieldFormatId')
-      getSecList = secList.find_element(:tag_name, 'option')
-
-      getSecList.each do |option2|
-        if option2.text == 'Text'
-          option2.click
-        end
-
-      end
-
-
-      @driver.find_element(:id, 'nextButton').click
-
-      @driver.find_element(:link_text, '+ Add an extended field').click
-
-
-
-
-    end
+    #add_extended_field()
 
     # Add Applicant
     @driver.find_element(:link_text, '+ Add Applicant').click
@@ -442,6 +402,8 @@ class TestNonEN < Test::Unit::TestCase
     end
 
     @driver.find_element(:id, 'nextButton').click
+
+    ##### ADD APPLICATION  #####
 
     # Input other fields
     getAllInputFields = @driver.find_elements(:tag_name, 'input')
@@ -476,6 +438,9 @@ class TestNonEN < Test::Unit::TestCase
             puts @concatStr
             x.send_keys @concatStr
           end
+
+        elsif getName.include? 'applicationEntryDate'
+          x.send_keys '03/17/2014'
         end
       end
 
@@ -486,22 +451,20 @@ class TestNonEN < Test::Unit::TestCase
     fillExtended = @driver.find_elements(:tag_name, 'input')
     fillExtended.each_with_index do |z, indexEx|
 
-      if indexEx >= 6
+      if indexEx >= 90 && indexEx <= 190
         extendedField = z.attribute('name')
-
         if extendedField.include? 'applicationExtendedValues'
           z.send_keys 'test xx'+indexEx.to_s
         end
+      else
+        puts 'not extened field'
       end
-
     end
+
+    staleElementHandler('addApplicationButton')
 
     @driver.find_element(:id, 'addApplicationButton').click
     sleep 5
-
-
-    @driver.find_element(:id, 'btnSave').click
-    sleep 3
 
   end
 
@@ -524,6 +487,46 @@ class TestNonEN < Test::Unit::TestCase
     @driver.find_element(:id, 'txtPassword').send_keys 'kwan'
     @driver.find_element(:id, 'chkAgreeToTermsAndUse').click
     @driver.find_element(:xpath, '//*[@id="loginForm"]/table/tbody/tr[5]/td[2]/input').click
+  end
+
+  def staleElementHandler(elementID)
+    count = 0
+    while (count < 4)
+      begin
+        slipperElement = @driver.find_element(:id, elementID)
+        show = slipperElement.displayed?
+        puts show
+      rescue Selenium::WebDriver::Error::StaleElementReferenceError
+        puts 'try to recovery the stale element'
+        count = count + 1
+      end
+      count = count + 4
+    end
+  end
+
+
+  def add_extended_field
+    @driver.find_element(:link_text, '+ Add an extended field').click
+
+    (1..100).each_with_index do |y, index_field|
+
+      @driver.find_element(:id, 'extendedField.englishCaption').send_keys 'test'+index_field.to_s
+      getTypeObject = @driver.find_element(:id, 'extendedField.extendedFieldTypeId')
+      getList = getTypeObject.find_elements(:tag_name, 'option')
+
+      getList.each do |option|
+        # select text
+        if option.text == 'Text'
+          option.click
+          break
+        end
+      end
+
+      staleElementHandler('extendedField.extendedFieldFormatId')
+      @driver.find_element(:id, 'nextButton').click
+      @driver.find_element(:link_text, '+ Add an extended field').click
+
+    end
   end
 
 end
