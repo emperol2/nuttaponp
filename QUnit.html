@@ -1,0 +1,49 @@
+<html>
+<head runat="server">
+    <title>Testing jQuery With QUnit</title>
+    <script type="text/javascript" language="javascript" src="http://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.14.0.css" type="text/css" media="screen" />
+    <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            var txt = $("input[id$=TextBox1]");
+            var span = $(txt).next();
+            $(txt).keyup(function() {
+                var length = $(txt).val().length;
+                $(span).text(length + " characters long");
+                $(span).css("background-color", length >= 8 ? "#FF0000" : "#FFFFFF");
+            });
+
+            test("Perform keyup - should fail", function() {
+                $(txt).val("Hello World!");
+                $(txt).trigger("keyup");
+                var color = $(span).css("background-color");
+                equal(color, "#ff0000", "The background color should be #ff0000");
+            });
+
+            test("Perform keyup - should pass", function() {
+                $(txt).val("Hello!");
+                $(txt).trigger("keyup");
+                var color = $(span).css("background-color");
+                equal(color, "rgb(255, 255, 255)", "The background color should be #ffffff");
+            });
+
+            test("Perform keyup - should fail I think", function() {
+                $(txt).val("Ok");
+                $(txt).trigger("keyup");
+                var color = $(span).css("background-color");
+                equal(color, "#ff0000", "The background color should be #ff0000");
+            });
+        });
+    </script>
+</head>
+<body>
+<form id="form1" runat="server">
+    <input type=input id="TextBox1"> </input>
+    <!-- <asp:TextBox ID="TextBox1" runat="server" /> -->
+    <span></span>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+</form>
+</body>
+</html>
