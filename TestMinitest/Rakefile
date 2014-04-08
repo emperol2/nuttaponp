@@ -1,0 +1,11 @@
+require 'rake'
+require 'rake/testtask'
+require 'ci/reporter/rake/minitest'
+#require 'ci/reporter/rake/minitest_loader'
+#require 'minitest'
+require 'test/unit'
+
+Rake::TestTask.new do |t|
+  #t.pattern = 'spec/*_spec.rb'
+  t.pattern = '*_test.rb'
+end
