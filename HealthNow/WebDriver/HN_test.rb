@@ -14,7 +14,7 @@ class UI_frontEnd < Test::Unit::TestCase
     @profile.native_events = true
     @driver = Selenium::WebDriver.for :firefox, :profile => @profile
     #@driver.manage.window.maximize
-    @driver.manage.window.resize_to(320, 600)
+    @driver.manage.window.resize_to(350, 750)
     @driver.manage.timeouts.implicit_wait = 20
     @wait = Selenium::WebDriver::Wait.new :timeout => 120
     @baseURL = 'http://qa.healthnow.com'
@@ -28,6 +28,7 @@ class UI_frontEnd < Test::Unit::TestCase
   def teardown
     # Do nothing
     @driver.quit
+    puts get_js_error_feedback
   end
 
   # Fake test
@@ -152,13 +153,16 @@ class UI_frontEnd < Test::Unit::TestCase
     end
     @driver.find_element(:id, 'btnProviderSave').click
     sleep 2
-    assert_equal('provider', @driver.find_element(:css, '#communityTeam .last-row').text)
+    #assert_equal('provider Child', @driver.find_element(:css, '#communityTeam .last-row').text)
+    assert(assert_text_contain('provider', @driver.find_element(:css, '#communityTeam .last-row').text))
+    assert(assert_text_contain('Child', @driver.find_element(:css, '#communityTeam .last-row').text))
   end
 
   def test_PatientAddInpatientTeam
     test_PatientHealthTeamList()
-    @driver.find_element(:css, '#inpatientTeam #btnAddTeam02').click
-    assert_equal('Provider Details', @driver.title)
+    #@wait.until { @driver.find_element(:css, '#btnAddTeam02') }
+    @driver.execute_script('window.scrollBy(0,1584)')
+    @driver.find_element(:css, '#btnAddTeam02').click
     @driver.find_element(:id, 'textName').send_keys 'provider'
     selectOption = @driver.find_element(:id, 'ddlInpatient')
     option = selectOption.find_elements(:tag_name, 'option')
@@ -170,7 +174,9 @@ class UI_frontEnd < Test::Unit::TestCase
     end
     @driver.find_element(:id, 'btnProviderSave').click
     sleep 2
-    assert_equal('provider', @driver.find_element(:css, '#inpatientTeam .last-row').text)
+    #assert_equal('provider CCAC Coordinator', @driver.find_element(:css, '#inpatientTeam .last-row').text)
+    assert(assert_text_contain('provider', @driver.find_element(:css, '#inpatientTeam .last-row').text))
+    assert(assert_text_contain('CCAC Coordinator', @driver.find_element(:css, '#inpatientTeam .last-row').text))
   end
 
   ##################################
@@ -364,6 +370,11 @@ class UI_frontEnd < Test::Unit::TestCase
       'Checking for JS errors failed with: #{e}'
     end
     jserror_descriptions
+  end
+
+  def assert_text_contain(expected, actual)
+    actual_text = actual
+    actual_text.include? expected
   end
 
 end
