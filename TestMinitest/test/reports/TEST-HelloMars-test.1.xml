@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HelloMars_test" tests="1" time="0.074004" failures="1" errors="0" skipped="0" assertions="1">
+  <testcase name="test_minus" time="0.074004" assertions="1">
+    <failure type="test_minus" message="Expected: 12...">
+Expected: 12
+  Actual: 1 (test_minus)
+C:/Users/nuttapon/RubymineProjects/RubyWebDriver/TestMinitest/HelloMars_test.rb:14    </failure>
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>
