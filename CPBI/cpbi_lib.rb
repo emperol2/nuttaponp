@@ -7,8 +7,8 @@ class CPBI_lib < Test::Unit::TestCase
   def initialize
     @driver = Selenium::WebDriver.for :firefox
     @driver.manage.window.maximize
-    @driver.manage.timeouts.implicit_wait = 20
-    @wait = Selenium::WebDriver::Wait.new :timeout => 120
+    @driver.manage.timeouts.implicit_wait = 10
+    @wait = Selenium::WebDriver::Wait.new :timeout => 10
     @verification_errors = []
   end
 
@@ -428,14 +428,22 @@ class CPBI_lib < Test::Unit::TestCase
     false
   end
 
-  module Test::Unit::Assertions
-    def assert_contains(expected_substring, string, *args)
-      assert string.include?(expected_substring), *args
-    end
+  # module Test::Unit::Assertions
+  #   def assert_contains(expected_substring, string, *args)
+  #     assert string.include?(expected_substring), *args
+  #   end
+  #
+  #   def assert_false(object, message = '')
+  #     assert_equal(false, object, message)
+  #   end
+  # end
 
-    def assert_false(object, message = '')
-      assert_equal(false, object, message)
-    end
+  def assert_contains(expected_substring, string, *args)
+    assert(string.include? expected_substring)
+  end
+
+  def assert_false(object, message = '')
+    assert_equal(false, object, message)
   end
 
 end
