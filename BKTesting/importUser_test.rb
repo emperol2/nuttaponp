@@ -52,8 +52,8 @@ class ImportUser < Test::Unit::TestCase
   end
 
   def admin_login
-    @driver.find_element(:id, "ctl00_pageContentPlace__usernameBox").send_keys 'ofsupport'
-    @driver.find_element(:id, "ctl00_pageContentPlace__passwordBox").send_keys '0p3nf4c3'
+    @driver.find_element(:id, "ctl00_pageContentPlace__usernameBox").send_keys 'username'
+    @driver.find_element(:id, "ctl00_pageContentPlace__passwordBox").send_keys 'password'
     @driver.find_element(:id, "ctl00_pageContentPlace__loginBtn").click
   end
 
