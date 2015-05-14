@@ -25,7 +25,8 @@ class CPBI_Live < Test::Unit::TestCase
     @CPBI_lib = CPBI_lib.new
     @driver = @CPBI_lib.driver
     @wait = @CPBI_lib.wait
-    @baseURL = 'http://preview.cpbi-icra.ca/'
+    @baseURL = 'http://cpbi-icra.ca/'
+    # @baseURL = 'http://preview.cpbi-icra.ca/'
   end
 
   # Called after every test method runs. Can be used to tear
@@ -321,8 +322,8 @@ class CPBI_Live < Test::Unit::TestCase
       @driver.find_element(:id, login_random('Login_Password')).send_keys 'PI20002'
       @driver.find_element(:id, login_random('Login_btnLogin')).click
     else # if Live site
-      @driver.find_element(:id, login_random('Login_UserName')).send_keys '21007'
-      @driver.find_element(:id, login_random('Login_Password')).send_keys 'PI21007'
+      @driver.find_element(:id, login_random('Login_UserName')).send_keys '20940'
+      @driver.find_element(:id, login_random('Login_Password')).send_keys 'PI20940'
       @driver.find_element(:id, login_random('Login_btnLogin')).click
 
     end
