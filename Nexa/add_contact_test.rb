@@ -58,7 +58,7 @@ class TestAddContact < Test::Unit::TestCase
 
   def login
     @driver.find_element(:id, 'txtUsername').send_keys 'user'
-    @driver.find_element(:id, 'txtPassword').send_keys 'patcharin'
+    @driver.find_element(:id, 'txtPassword').send_keys 'password'
     @driver.find_element(:id, 'chkAgreeToTermsAndUse').click
     @driver.find_element(:xpath, '//*[@id="loginForm"]/table/tbody/tr[5]/td[2]/input').click
   end
