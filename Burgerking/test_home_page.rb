@@ -11,7 +11,7 @@ module Test
       client = Selenium::WebDriver::Remote::Http::Default.new
       client.timeout = 300
       @driver = Selenium::WebDriver.for :phantomjs, :http_client => client
-      @driver.navigate.to('http://www.burgerking.fi')
+      @driver.navigate.to('http://www.bk.com')
       @driver.manage.timeouts.implicit_wait = 40
       @driver.manage.timeouts.page_load = 40
       @wait = Selenium::WebDriver::Wait.new :timeout => 300
@@ -95,6 +95,13 @@ module Test
     def test_home_bk_delivers
       verify_visible_image_in_css(:css, '.bkDelivers')
       assert @driver.find_element(:css, 'section.bkDelivers h3.title').text.include?'delivers'
+      assert_not_nil @driver.find_element(:css, 'section.bkDelivers h4.subtitle').text
+    end
+
+    def test_home_bk_app
+      verify_visible_image_in_css(:css, '.bkDelivers')
+      p @driver.find_element(:css, 'section.bkDelivers h3.title').text
+      assert @driver.find_element(:css, 'section.bkDelivers h3.title').text.include?'APP'
       assert_not_nil @driver.find_element(:css, 'section.bkDelivers h4.subtitle').text
     end
 

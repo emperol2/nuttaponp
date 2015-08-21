@@ -10,8 +10,11 @@ module Test
     # Called before every test method runs. Can be used
     # to set up fixture information.
     def setup
-      @driver = Selenium::WebDriver.for :phantomjs
-      @driver.navigate.to('http://www.bk.com/locations')
+      client = Selenium::WebDriver::Remote::Http::Default.new
+      client.timeout = 300
+      @driver = Selenium::WebDriver.for :ff, :http_client => client
+      #@driver = Selenium::WebDriver.for :ff
+      @driver.navigate.to('http://www.bk.com/locations?field_geofield_distance[origin][lat]=0.00&field_geofield_distance[origin][lon]=0.00')
       @driver.manage.timeouts.implicit_wait = 40
       @wait = Selenium::WebDriver::Wait.new :timeout => 20
     end
