@@ -2,6 +2,9 @@ require 'selenium-webdriver'
 require 'test/unit'
 require 'phantomjs'
 require 'net/http'
+require_relative 'bk_lib'
+
+include BK_lib
 
 module Test
   class TestItemsPageSTG < Test::Unit::TestCase
@@ -11,7 +14,7 @@ module Test
       client.timeout = 300
       @driver = Selenium::WebDriver.for :phantomjs, :http_client => client
       #@driver.navigate.to('http://www.burgerking.co.uk')
-      @rootURL = 'http://www.burgerking.co.uk'
+      @rootURL = SITE_URL
       @driver.manage.timeouts.implicit_wait = 20
       @driver.manage.timeouts.script_timeout = 20
       @wait = Selenium::WebDriver::Wait.new :timeout => 30
@@ -201,8 +204,20 @@ module Test
       imgList = @driver.find_elements(:tag_name, 'img')
       if imgList
         imgList.each do |i|
-          res = Net::HTTP.get_response(URI(i.attribute('src')))
-          assert_equal('200', res.code, "This is error #{i.attribute('src')}")
+          if LIVE_SITE == true
+            res = Net::HTTP.get_response(URI(i.attribute('src')))
+            assert_equal('200', res.code, "This is error #{i.attribute('src')}")
+          else
+            # p httpstring = i.attribute('src')
+            req = Net::HTTP::Get.new(URI(i.attribute('src')).request_uri)
+            req.basic_auth QA_USERNAME, QA_PASSWORD
+            res = Net::HTTP.start(URI(i.attribute('src')).hostname, URI(i.attribute('src')).port) {|http|
+              p http.request(req)
+              # assert_equal('200', http.request(req), "This is error #{i.attribute('src')}")
+            }
+            #puts res.code
+            assert res.code.include?'200'
+          end
         end
       else
         false
